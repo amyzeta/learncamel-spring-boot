@@ -1,0 +1,59 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    jdbcUrl: jdbc:postgresql://localhost:5432/camel
+    username: postgres
+    password: postgres
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: sandhicamel@gmail.com
+    password: ENC(Fq/iMRYWyzI4eEaKhXOX4La2a/6qCCI7/usQuWlGVtQ=)
+    properties.mail.smtp:
+      auth: true
+      starttls.enable: true
+mailto: sandhicamel@gmail.com
+mailfrom: sandhicamel@gmail.com
+
+jasypt.encryptor.password: ${JASYPT_ENCRYPTOR_PASSWORD:}
+
+
+camel:
+  springboot:
+    shutdownTimeout: 2
+    health.indicator.enabled: true
+
+management.endpoint.health.show-details: always
+
+startRoute: timer:hello?period=10s
+fromRoute: file:data/input?delete=true&readLock=none&moveFailed=error
+toRoute1: file:data/output
+toRoute2: jdbc:datasource
+toRoute3: file:data/output?fileName=success.txt
+healthRoute: timer:healthRoute?period=10s
+---
+spring:
+  profiles: dev
+
+message: DEV Environment
+---
+spring:
+  profiles: prod
+
+message: PROD Environment
+
+---
+spring:
+  profiles: mock
+
+startRoute: direct:input
+fromRoute: file:data/input?delete=true&readLock=none #not used but still needs to be defined
+toRoute1: mock:output1
+toRoute2: mock:output2
+toRoute3: mock:output3
+healthRoute: direct:health
+
+message: MOCK_TEST Environment
+---

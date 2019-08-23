@@ -1,0 +1,640 @@
+14-08-2019 18:12:02.202 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.buildDefaultMergedContextConfiguration - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest], using SpringBootContextLoader
+14-08-2019 18:12:02.516 [main] INFO  o.s.t.c.s.AbstractContextLoader.generateDefaultLocations - Could not detect default resource locations for test class [com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+14-08-2019 18:12:02.546 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils.detectDefaultConfigurationClasses - Could not detect default configuration classes for test class [com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest]: SimpleCamelRouteTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14-08-2019 18:12:03.278 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses - Found @SpringBootConfiguration com.learncamel.learncamelspringboot.LearnCamelSpringBootApplication for test class com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest
+14-08-2019 18:12:04.037 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.getDefaultTestExecutionListenerClassNames - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener]
+14-08-2019 18:12:04.148 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.getTestExecutionListeners - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3fb6cf60, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@37ddb69a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@349c1daf, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@dfddc9a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4b9df8a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5e8ac0e1, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@aafcffa, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6955cb39, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@235a0c16, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2b5f4d54, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5f7b97da, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@18b0930f]
+14-08-2019 18:12:04.332 [main] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.prepareTestInstance - @RunWith(CamelSpringBootRunner.class) preparing: class com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest
+14-08-2019 18:12:07.352 [main] INFO  c.l.l.route.SimpleCamelRouteTest.logStarting - Starting SimpleCamelRouteTest on amy-VirtualBox with PID 20430 (started by amy in /home/amy/IdeaProjects/learncamel-spring-boot)
+14-08-2019 18:12:07.353 [main] INFO  c.l.l.route.SimpleCamelRouteTest.logStartupProfileInfo - The following profiles are active: dev
+14-08-2019 18:12:13.053 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$6683ebdd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14-08-2019 18:12:13.086 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$445a25be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14-08-2019 18:12:15.596 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+14-08-2019 18:12:16.839 [main] INFO  o.a.c.i.c.DefaultTypeConverter.doStart - Type converters loaded (core: 195, classpath: 1)
+14-08-2019 18:12:19.227 [main] INFO  c.l.l.route.SimpleCamelRoute.configure - Starting the Camel Route
+14-08-2019 18:12:19.367 [main] INFO  c.l.l.route.SimpleCamelRoute.configure - Ending the Camel Route
+14-08-2019 18:12:19.369 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRoutes - Loading additional Camel XML routes from: classpath:camel/*.xml
+14-08-2019 18:12:19.370 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRests - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+14-08-2019 18:12:19.526 [main] INFO  c.l.l.route.SimpleCamelRouteTest.logStarted - Started SimpleCamelRouteTest in 14.654 seconds (JVM running for 22.709)
+14-08-2019 18:12:19.560 [main] INFO  o.a.c.t.s.CamelAnnotationsHandler.execute - Setting shutdown timeout to [10 SECONDS] on CamelContext with name [camelContext].
+14-08-2019 18:12:19.712 [main] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.beforeTestMethod - @RunWith(CamelSpringBootRunner.class) before: class com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest.moveFile_add_throwsException
+14-08-2019 18:12:19.713 [main] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.beforeTestMethod - Initialized CamelSpringBootRunner now ready to start CamelContext
+14-08-2019 18:12:19.719 [main] INFO  o.a.c.t.s.CamelAnnotationsHandler.execute - Starting CamelContext with name [camelContext].
+14-08-2019 18:12:19.724 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.24.0 (CamelContext: camel-1) is starting
+14-08-2019 18:12:19.727 [main] INFO  o.a.c.m.ManagedManagementStrategy.doStart - JMX is enabled
+14-08-2019 18:12:21.061 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartCamel - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+14-08-2019 18:12:21.430 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route1 started and consuming from: timer://hello?period=10s
+14-08-2019 18:12:21.456 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Total 1 routes, of which 1 are started
+14-08-2019 18:12:21.461 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.24.0 (CamelContext: camel-1) started in 1.733 seconds
+14-08-2019 18:12:22.494 [Camel (camel-1) thread #1 - timer://hello] INFO  route1.log - Timer Invoked and the body is  DEV Environment
+14-08-2019 18:12:23.152 [Camel (camel-1) thread #1 - timer://hello] INFO  route1.log - unmarshalling and the body is type,sku#,itemdescription,price
+ADD,,Samsung TV,500
+14-08-2019 18:12:23.270 [Camel (camel-1) thread #1 - timer://hello] INFO  route1.log - The unmarshalled object is Item(transactionType=ADD, sku=, itemDescription=Samsung TV, price=500.00)
+14-08-2019 18:12:23.288 [Camel (camel-1) thread #1 - timer://hello] INFO  route1.log - Record is Item(transactionType=ADD, sku=, itemDescription=Samsung TV, price=500.00)
+14-08-2019 18:12:23.292 [Camel (camel-1) thread #1 - timer://hello] INFO  c.l.l.process.BuildSqlProcessor.process - Item in Processor is: Item(transactionType=ADD, sku=, itemDescription=Samsung TV, price=500.00)
+14-08-2019 18:12:23.303 [Camel (camel-1) thread #1 - timer://hello] ERROR route1.log - Exception in the route Item(transactionType=ADD, sku=, itemDescription=Samsung TV, price=500.00)
+14-08-2019 18:12:23.318 [Camel (camel-1) thread #1 - timer://hello] ERROR o.a.c.processor.DefaultErrorHandler.log - Failed delivery for (MessageId: ID-amy-VirtualBox-1565763136503-0-5 on ExchangeId: ID-amy-VirtualBox-1565763136503-0-4). Exhausted after delivery attempt: 1 caught: com.learncamel.learncamelspringboot.exception.DataException: Sku is null for Samsung TV. Processed by failure processor: FatalFallbackErrorHandler[Channel[Log(route1)[Exception in the route ${body}]]]
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route1            ] [route1            ] [timer://hello?period=10s                                                      ] [       839]
+[route1            ] [log6              ] [log                                                                           ] [         4]
+[route1            ] [process1          ] [Processor@0x1681d70a                                                          ] [        14]
+[route1            ] [log1              ] [log                                                                           ] [         3]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+com.learncamel.learncamelspringboot.exception.DataException: Sku is null for Samsung TV
+	at com.learncamel.learncamelspringboot.process.BuildSqlProcessor.getQuery(BuildSqlProcessor.java:31)
+	at com.learncamel.learncamelspringboot.process.BuildSqlProcessor.process(BuildSqlProcessor.java:20)
+	at org.apache.camel.processor.DelegateSyncProcessor.process(DelegateSyncProcessor.java:63)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:715)
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:638)
+	at org.apache.camel.processor.MulticastProcessor.process(MulticastProcessor.java:248)
+	at org.apache.camel.processor.Splitter.process(Splitter.java:129)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:197)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:79)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+14-08-2019 18:12:23.324 [Camel (camel-1) thread #1 - timer://hello] WARN  o.a.c.c.file.GenericFileOnCompletion.processStrategyRollback - Rollback file strategy: org.apache.camel.component.file.strategy.GenericFileDeleteProcessStrategy@1342812c for file: GenericFile[fileTest.txt]
+14-08-2019 18:12:23.332 [Camel (camel-1) thread #1 - timer://hello] WARN  o.a.c.component.timer.TimerConsumer.log - Error processing exchange. Exchange[ID-amy-VirtualBox-1565763136503-0-1]. Caused by: [com.learncamel.learncamelspringboot.exception.DataException - Sku is null for Samsung TV]
+com.learncamel.learncamelspringboot.exception.DataException: Sku is null for Samsung TV
+	at com.learncamel.learncamelspringboot.process.BuildSqlProcessor.getQuery(BuildSqlProcessor.java:31)
+	at com.learncamel.learncamelspringboot.process.BuildSqlProcessor.process(BuildSqlProcessor.java:20)
+	at org.apache.camel.processor.DelegateSyncProcessor.process(DelegateSyncProcessor.java:63)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:715)
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:638)
+	at org.apache.camel.processor.MulticastProcessor.process(MulticastProcessor.java:248)
+	at org.apache.camel.processor.Splitter.process(Splitter.java:129)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:197)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:79)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+14-08-2019 18:12:25.666 [main] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-1) is shutting down
+14-08-2019 18:12:25.667 [main] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Starting to graceful shutdown 1 routes (timeout 10 seconds)
+14-08-2019 18:12:25.691 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: route1 shutdown complete, was consuming from: timer://hello?period=10s
+14-08-2019 18:12:25.694 [main] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Graceful shutdown of 1 routes completed in 0 seconds
+14-08-2019 18:12:25.710 [main] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-1) uptime 5.986 seconds
+14-08-2019 18:12:25.711 [main] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-1) is shutdown in 0.045 seconds
+14-08-2019 18:12:25.723 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+14-08-2019 18:12:25.730 [main] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - ********************************************************************************
+14-08-2019 18:12:25.731 [main] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - Testing done: moveFile_add_throwsException(com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest)
+14-08-2019 18:12:25.731 [main] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - Took: 4.269 seconds (4269 millis)
+14-08-2019 18:12:25.731 [main] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - ********************************************************************************
+14-08-2019 18:12:25.732 [main] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.afterTestMethod - @RunWith(CamelSpringBootRunner.class) after: class com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest.moveFile_add_throwsException
+14-08-2019 19:49:51.983 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.buildDefaultMergedContextConfiguration - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest], using SpringBootContextLoader
+14-08-2019 19:49:52.007 [main] INFO  o.s.t.c.s.AbstractContextLoader.generateDefaultLocations - Could not detect default resource locations for test class [com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+14-08-2019 19:49:52.014 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils.detectDefaultConfigurationClasses - Could not detect default configuration classes for test class [com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest]: SimpleCamelRouteTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14-08-2019 19:49:52.714 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses - Found @SpringBootConfiguration com.learncamel.learncamelspringboot.LearnCamelSpringBootApplication for test class com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest
+14-08-2019 19:49:53.736 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.getDefaultTestExecutionListenerClassNames - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener]
+14-08-2019 19:49:53.894 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.getTestExecutionListeners - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@784c3487, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@53142455, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@40dff0b7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7966baa7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@60975100, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1253e7cb, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2d36e77e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@61c9c3fd, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3b0c9195, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@366c4480, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2c7b5824, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@302a07d]
+14-08-2019 19:49:54.075 [main] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.prepareTestInstance - @RunWith(CamelSpringBootRunner.class) preparing: class com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest
+14-08-2019 19:49:57.052 [main] INFO  c.l.l.route.SimpleCamelRouteTest.logStarting - Starting SimpleCamelRouteTest on amy-VirtualBox with PID 14291 (started by amy in /home/amy/IdeaProjects/learncamel-spring-boot)
+14-08-2019 19:49:57.053 [main] INFO  c.l.l.route.SimpleCamelRouteTest.logStartupProfileInfo - The following profiles are active: dev
+14-08-2019 19:50:02.570 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$8b2bed79] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14-08-2019 19:50:02.603 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6902275a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14-08-2019 19:50:05.107 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+14-08-2019 19:50:06.240 [main] INFO  o.a.c.i.c.DefaultTypeConverter.doStart - Type converters loaded (core: 195, classpath: 1)
+14-08-2019 19:50:08.555 [main] INFO  c.l.l.route.SimpleCamelRoute.configure - Starting the Camel Route
+14-08-2019 19:50:08.682 [main] INFO  c.l.l.route.SimpleCamelRoute.configure - Ending the Camel Route
+14-08-2019 19:50:08.685 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRoutes - Loading additional Camel XML routes from: classpath:camel/*.xml
+14-08-2019 19:50:08.685 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRests - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+14-08-2019 19:50:08.745 [main] INFO  c.l.l.route.SimpleCamelRouteTest.logStarted - Started SimpleCamelRouteTest in 14.122 seconds (JVM running for 23.883)
+14-08-2019 19:50:08.757 [main] INFO  o.a.c.t.s.CamelAnnotationsHandler.execute - Setting shutdown timeout to [10 SECONDS] on CamelContext with name [camelContext].
+14-08-2019 19:50:09.001 [main] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.beforeTestMethod - @RunWith(CamelSpringBootRunner.class) before: class com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest.moveFile_add_throwsException
+14-08-2019 19:50:09.002 [main] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.beforeTestMethod - Initialized CamelSpringBootRunner now ready to start CamelContext
+14-08-2019 19:50:09.015 [main] INFO  o.a.c.t.s.CamelAnnotationsHandler.execute - Starting CamelContext with name [camelContext].
+14-08-2019 19:50:09.020 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.24.0 (CamelContext: camel-1) is starting
+14-08-2019 19:50:09.029 [main] INFO  o.a.c.m.ManagedManagementStrategy.doStart - JMX is enabled
+14-08-2019 19:50:10.068 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartCamel - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+14-08-2019 19:50:10.365 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route1 started and consuming from: timer://hello?period=10s
+14-08-2019 19:50:10.372 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Total 1 routes, of which 1 are started
+14-08-2019 19:50:10.378 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.24.0 (CamelContext: camel-1) started in 1.354 seconds
+14-08-2019 19:50:11.378 [Camel (camel-1) thread #1 - timer://hello] INFO  route1.log - Timer Invoked and the body is  DEV Environment
+14-08-2019 19:50:11.482 [Camel (camel-1) thread #1 - timer://hello] INFO  route1.log - unmarshalling and the body is type,sku#,itemdescription,price
+ADD,,Samsung TV,500
+14-08-2019 19:50:11.642 [Camel (camel-1) thread #1 - timer://hello] INFO  route1.log - The unmarshalled object is Item(transactionType=ADD, sku=, itemDescription=Samsung TV, price=500.00)
+14-08-2019 19:50:11.663 [Camel (camel-1) thread #1 - timer://hello] INFO  route1.log - Record is Item(transactionType=ADD, sku=, itemDescription=Samsung TV, price=500.00)
+14-08-2019 19:50:11.664 [Camel (camel-1) thread #1 - timer://hello] INFO  c.l.l.process.BuildSqlProcessor.process - Item in Processor is: Item(transactionType=ADD, sku=, itemDescription=Samsung TV, price=500.00)
+14-08-2019 19:50:11.681 [Camel (camel-1) thread #1 - timer://hello] ERROR route1.log - DataException in the route Item(transactionType=ADD, sku=, itemDescription=Samsung TV, price=500.00)
+14-08-2019 19:50:11.691 [Camel (camel-1) thread #1 - timer://hello] ERROR o.a.c.processor.DefaultErrorHandler.log - Failed delivery for (MessageId: ID-amy-VirtualBox-1565769005938-0-6 on ExchangeId: ID-amy-VirtualBox-1565769005938-0-5). Exhausted after delivery attempt: 1 caught: com.learncamel.learncamelspringboot.exception.DataException: Sku is null for Samsung TV. Processed by failure processor: FatalFallbackErrorHandler[Channel[Log(route1)[DataException in the route ${body}]]]
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route1            ] [route1            ] [timer://hello?period=10s                                                      ] [       308]
+[route1            ] [log7              ] [log                                                                           ] [         3]
+[route1            ] [process1          ] [Processor@0x377be375                                                          ] [        17]
+[route1            ] [log2              ] [log                                                                           ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+com.learncamel.learncamelspringboot.exception.DataException: Sku is null for Samsung TV
+	at com.learncamel.learncamelspringboot.process.BuildSqlProcessor.getQuery(BuildSqlProcessor.java:31)
+	at com.learncamel.learncamelspringboot.process.BuildSqlProcessor.process(BuildSqlProcessor.java:20)
+	at org.apache.camel.processor.DelegateSyncProcessor.process(DelegateSyncProcessor.java:63)
+	at org.apache.camel.management.InstrumentationProcessor.process(InstrumentationProcessor.java:76)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:715)
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:638)
+	at org.apache.camel.processor.MulticastProcessor.process(MulticastProcessor.java:248)
+	at org.apache.camel.processor.Splitter.process(Splitter.java:129)
+	at org.apache.camel.management.InstrumentationProcessor.process(InstrumentationProcessor.java:76)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:197)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:79)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+14-08-2019 19:50:11.694 [Camel (camel-1) thread #1 - timer://hello] WARN  o.a.c.c.file.GenericFileOnCompletion.processStrategyRollback - Rollback file strategy: org.apache.camel.component.file.strategy.GenericFileDeleteProcessStrategy@70f1b83b for file: GenericFile[fileTest.txt]
+14-08-2019 19:50:11.701 [Camel (camel-1) thread #1 - timer://hello] WARN  o.a.c.component.timer.TimerConsumer.log - Error processing exchange. Exchange[ID-amy-VirtualBox-1565769005938-0-2]. Caused by: [com.learncamel.learncamelspringboot.exception.DataException - Sku is null for Samsung TV]
+com.learncamel.learncamelspringboot.exception.DataException: Sku is null for Samsung TV
+	at com.learncamel.learncamelspringboot.process.BuildSqlProcessor.getQuery(BuildSqlProcessor.java:31)
+	at com.learncamel.learncamelspringboot.process.BuildSqlProcessor.process(BuildSqlProcessor.java:20)
+	at org.apache.camel.processor.DelegateSyncProcessor.process(DelegateSyncProcessor.java:63)
+	at org.apache.camel.management.InstrumentationProcessor.process(InstrumentationProcessor.java:76)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:715)
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:638)
+	at org.apache.camel.processor.MulticastProcessor.process(MulticastProcessor.java:248)
+	at org.apache.camel.processor.Splitter.process(Splitter.java:129)
+	at org.apache.camel.management.InstrumentationProcessor.process(InstrumentationProcessor.java:76)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:197)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:79)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+14-08-2019 19:50:14.436 [main] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-1) is shutting down
+14-08-2019 19:50:14.447 [main] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Starting to graceful shutdown 1 routes (timeout 10 seconds)
+14-08-2019 19:50:14.745 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: route1 shutdown complete, was consuming from: timer://hello?period=10s
+14-08-2019 19:50:14.750 [main] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Graceful shutdown of 1 routes completed in 0 seconds
+14-08-2019 19:50:14.839 [main] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-1) uptime 5.820 seconds
+14-08-2019 19:50:14.842 [main] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-1) is shutdown in 0.404 seconds
+14-08-2019 19:50:14.858 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+14-08-2019 19:50:14.867 [main] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - ********************************************************************************
+14-08-2019 19:50:14.868 [main] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - Testing done: moveFile_add_throwsException(com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest)
+14-08-2019 19:50:14.868 [main] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - Took: 4.489 seconds (4489 millis)
+14-08-2019 19:50:14.868 [main] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - ********************************************************************************
+14-08-2019 19:50:14.869 [main] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.afterTestMethod - @RunWith(CamelSpringBootRunner.class) after: class com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest.moveFile_add_throwsException
+14-08-2019 19:51:22.478 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.buildDefaultMergedContextConfiguration - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest], using SpringBootContextLoader
+14-08-2019 19:51:22.563 [main] INFO  o.s.t.c.s.AbstractContextLoader.generateDefaultLocations - Could not detect default resource locations for test class [com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+14-08-2019 19:51:22.585 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils.detectDefaultConfigurationClasses - Could not detect default configuration classes for test class [com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest]: SimpleCamelRouteTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14-08-2019 19:51:23.830 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses - Found @SpringBootConfiguration com.learncamel.learncamelspringboot.LearnCamelSpringBootApplication for test class com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest
+14-08-2019 19:51:24.860 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.getDefaultTestExecutionListenerClassNames - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener]
+14-08-2019 19:51:25.012 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.getTestExecutionListeners - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7966baa7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@60975100, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1253e7cb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2d36e77e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@61c9c3fd, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3b0c9195, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@366c4480, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2c7b5824, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@302a07d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5cdd09b1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@8c11eee, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7e8dcdaa]
+14-08-2019 19:51:25.268 [main] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.prepareTestInstance - @RunWith(CamelSpringBootRunner.class) preparing: class com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest
+14-08-2019 19:51:28.365 [main] INFO  c.l.l.route.SimpleCamelRouteTest.logStarting - Starting SimpleCamelRouteTest on amy-VirtualBox with PID 14658 (started by amy in /home/amy/IdeaProjects/learncamel-spring-boot)
+14-08-2019 19:51:28.367 [main] INFO  c.l.l.route.SimpleCamelRouteTest.logStartupProfileInfo - The following profiles are active: dev
+14-08-2019 19:51:33.767 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$c7182c27] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14-08-2019 19:51:33.812 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a4ee6608] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14-08-2019 19:51:36.284 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+14-08-2019 19:51:37.582 [main] INFO  o.a.c.i.c.DefaultTypeConverter.doStart - Type converters loaded (core: 195, classpath: 1)
+14-08-2019 19:51:39.747 [main] INFO  c.l.l.route.SimpleCamelRoute.configure - Starting the Camel Route
+14-08-2019 19:51:39.865 [main] INFO  c.l.l.route.SimpleCamelRoute.configure - Ending the Camel Route
+14-08-2019 19:51:39.871 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRoutes - Loading additional Camel XML routes from: classpath:camel/*.xml
+14-08-2019 19:51:39.872 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRests - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+14-08-2019 19:51:39.913 [main] INFO  c.l.l.route.SimpleCamelRouteTest.logStarted - Started SimpleCamelRouteTest in 14.074 seconds (JVM running for 25.692)
+14-08-2019 19:51:39.925 [main] INFO  o.a.c.t.s.CamelAnnotationsHandler.execute - Setting shutdown timeout to [10 SECONDS] on CamelContext with name [camelContext].
+14-08-2019 19:51:40.116 [main] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.beforeTestMethod - @RunWith(CamelSpringBootRunner.class) before: class com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest.moveFile_add_throwsException
+14-08-2019 19:51:40.118 [main] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.beforeTestMethod - Initialized CamelSpringBootRunner now ready to start CamelContext
+14-08-2019 19:51:40.131 [main] INFO  o.a.c.t.s.CamelAnnotationsHandler.execute - Starting CamelContext with name [camelContext].
+14-08-2019 19:51:40.137 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.24.0 (CamelContext: camel-1) is starting
+14-08-2019 19:51:40.142 [main] INFO  o.a.c.m.ManagedManagementStrategy.doStart - JMX is enabled
+14-08-2019 19:51:41.374 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartCamel - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+14-08-2019 19:51:41.707 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route1 started and consuming from: timer://hello?period=10s
+14-08-2019 19:51:41.713 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Total 1 routes, of which 1 are started
+14-08-2019 19:51:41.713 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.24.0 (CamelContext: camel-1) started in 1.577 seconds
+14-08-2019 19:51:42.715 [Camel (camel-1) thread #1 - timer://hello] INFO  route1.log - Timer Invoked and the body is  DEV Environment
+14-08-2019 19:51:42.791 [Camel (camel-1) thread #1 - timer://hello] INFO  route1.log - unmarshalling and the body is type,sku#,itemdescription,price
+ADD,,Samsung TV,500
+14-08-2019 19:51:42.913 [Camel (camel-1) thread #1 - timer://hello] INFO  route1.log - The unmarshalled object is Item(transactionType=ADD, sku=, itemDescription=Samsung TV, price=500.00)
+14-08-2019 19:51:42.964 [Camel (camel-1) thread #1 - timer://hello] INFO  route1.log - Record is Item(transactionType=ADD, sku=, itemDescription=Samsung TV, price=500.00)
+14-08-2019 19:51:42.970 [Camel (camel-1) thread #1 - timer://hello] INFO  c.l.l.process.BuildSqlProcessor.process - Item in Processor is: Item(transactionType=ADD, sku=, itemDescription=Samsung TV, price=500.00)
+14-08-2019 19:51:42.982 [Camel (camel-1) thread #1 - timer://hello] ERROR route1.log - DataException in the route Item(transactionType=ADD, sku=, itemDescription=Samsung TV, price=500.00)
+14-08-2019 19:51:43.007 [Camel (camel-1) thread #1 - timer://hello] ERROR o.a.c.processor.DefaultErrorHandler.log - Failed delivery for (MessageId: ID-amy-VirtualBox-1565769097207-0-6 on ExchangeId: ID-amy-VirtualBox-1565769097207-0-5). Exhausted after delivery attempt: 1 caught: com.learncamel.learncamelspringboot.exception.DataException: Sku is null for Samsung TV. Processed by failure processor: FatalFallbackErrorHandler[Channel[Log(route1)[DataException in the route ${body}]]]
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route1            ] [route1            ] [timer://hello?period=10s                                                      ] [       273]
+[route1            ] [log7              ] [log                                                                           ] [         6]
+[route1            ] [process1          ] [Processor@0x26a8d2f7                                                          ] [        17]
+[route1            ] [log2              ] [log                                                                           ] [         5]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+com.learncamel.learncamelspringboot.exception.DataException: Sku is null for Samsung TV
+	at com.learncamel.learncamelspringboot.process.BuildSqlProcessor.getQuery(BuildSqlProcessor.java:31)
+	at com.learncamel.learncamelspringboot.process.BuildSqlProcessor.process(BuildSqlProcessor.java:20)
+	at org.apache.camel.processor.DelegateSyncProcessor.process(DelegateSyncProcessor.java:63)
+	at org.apache.camel.management.InstrumentationProcessor.process(InstrumentationProcessor.java:76)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:715)
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:638)
+	at org.apache.camel.processor.MulticastProcessor.process(MulticastProcessor.java:248)
+	at org.apache.camel.processor.Splitter.process(Splitter.java:129)
+	at org.apache.camel.management.InstrumentationProcessor.process(InstrumentationProcessor.java:76)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:197)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:79)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+14-08-2019 19:51:43.008 [Camel (camel-1) thread #1 - timer://hello] WARN  o.a.c.c.file.GenericFileOnCompletion.processStrategyRollback - Rollback file strategy: org.apache.camel.component.file.strategy.GenericFileDeleteProcessStrategy@1eeb0f76 for file: GenericFile[fileTest.txt]
+14-08-2019 19:51:43.023 [Camel (camel-1) thread #1 - timer://hello] WARN  o.a.c.component.timer.TimerConsumer.log - Error processing exchange. Exchange[ID-amy-VirtualBox-1565769097207-0-2]. Caused by: [com.learncamel.learncamelspringboot.exception.DataException - Sku is null for Samsung TV]
+com.learncamel.learncamelspringboot.exception.DataException: Sku is null for Samsung TV
+	at com.learncamel.learncamelspringboot.process.BuildSqlProcessor.getQuery(BuildSqlProcessor.java:31)
+	at com.learncamel.learncamelspringboot.process.BuildSqlProcessor.process(BuildSqlProcessor.java:20)
+	at org.apache.camel.processor.DelegateSyncProcessor.process(DelegateSyncProcessor.java:63)
+	at org.apache.camel.management.InstrumentationProcessor.process(InstrumentationProcessor.java:76)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:715)
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:638)
+	at org.apache.camel.processor.MulticastProcessor.process(MulticastProcessor.java:248)
+	at org.apache.camel.processor.Splitter.process(Splitter.java:129)
+	at org.apache.camel.management.InstrumentationProcessor.process(InstrumentationProcessor.java:76)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:197)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:79)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+14-08-2019 19:51:45.672 [main] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-1) is shutting down
+14-08-2019 19:51:45.676 [main] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Starting to graceful shutdown 1 routes (timeout 10 seconds)
+14-08-2019 19:51:45.705 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: route1 shutdown complete, was consuming from: timer://hello?period=10s
+14-08-2019 19:51:45.706 [main] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Graceful shutdown of 1 routes completed in 0 seconds
+14-08-2019 19:51:45.725 [main] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-1) uptime 5.589 seconds
+14-08-2019 19:51:45.725 [main] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-1) is shutdown in 0.053 seconds
+14-08-2019 19:51:45.736 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+14-08-2019 19:51:45.747 [main] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - ********************************************************************************
+14-08-2019 19:51:45.748 [main] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - Testing done: moveFile_add_throwsException(com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest)
+14-08-2019 19:51:45.751 [main] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - Took: 4.033 seconds (4033 millis)
+14-08-2019 19:51:45.751 [main] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - ********************************************************************************
+14-08-2019 19:51:45.752 [main] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.afterTestMethod - @RunWith(CamelSpringBootRunner.class) after: class com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest.moveFile_add_throwsException
+14-08-2019 19:56:45.709 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.buildDefaultMergedContextConfiguration - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.learncamel.learncamelspringboot.route.SimpleCamelRouteMockTest], using SpringBootContextLoader
+14-08-2019 19:56:45.750 [Test worker] INFO  o.s.t.c.s.AbstractContextLoader.generateDefaultLocations - Could not detect default resource locations for test class [com.learncamel.learncamelspringboot.route.SimpleCamelRouteMockTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+14-08-2019 19:56:45.756 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils.detectDefaultConfigurationClasses - Could not detect default configuration classes for test class [com.learncamel.learncamelspringboot.route.SimpleCamelRouteMockTest]: SimpleCamelRouteMockTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14-08-2019 19:56:46.414 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses - Found @SpringBootConfiguration com.learncamel.learncamelspringboot.LearnCamelSpringBootApplication for test class com.learncamel.learncamelspringboot.route.SimpleCamelRouteMockTest
+14-08-2019 19:56:46.603 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.getDefaultTestExecutionListenerClassNames - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener]
+14-08-2019 19:56:46.629 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.getTestExecutionListeners - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@935562e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@305da5d3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@710119, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@27962bec, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4319d16, org.springframework.test.context.transaction.TransactionalTestExecutionListener@591fc37e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@516e688d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@47b1f007, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4f601cca, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6843326b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4acb05ee, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2b2f578]
+14-08-2019 19:56:46.655 [Test worker] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.prepareTestInstance - @RunWith(CamelSpringBootRunner.class) preparing: class com.learncamel.learncamelspringboot.route.SimpleCamelRouteMockTest
+14-08-2019 19:56:47.771 [Test worker] INFO  c.l.l.route.SimpleCamelRouteMockTest.logStarting - Starting SimpleCamelRouteMockTest on amy-VirtualBox with PID 16257 (started by amy in /home/amy/IdeaProjects/learncamel-spring-boot)
+14-08-2019 19:56:47.776 [Test worker] INFO  c.l.l.route.SimpleCamelRouteMockTest.logStartupProfileInfo - The following profiles are active: mock
+14-08-2019 19:56:52.206 [Test worker] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$cac865bc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14-08-2019 19:56:52.231 [Test worker] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a89e9f9d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14-08-2019 19:56:54.249 [Test worker] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+14-08-2019 19:56:55.135 [Test worker] INFO  o.a.c.i.c.DefaultTypeConverter.doStart - Type converters loaded (core: 195, classpath: 1)
+14-08-2019 19:56:56.898 [Test worker] INFO  c.l.l.route.SimpleCamelRoute.configure - Starting the Camel Route
+14-08-2019 19:56:56.994 [Test worker] INFO  c.l.l.route.SimpleCamelRoute.configure - Ending the Camel Route
+14-08-2019 19:56:56.998 [Test worker] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRoutes - Loading additional Camel XML routes from: classpath:camel/*.xml
+14-08-2019 19:56:56.999 [Test worker] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRests - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+14-08-2019 19:56:57.058 [Test worker] INFO  c.l.l.route.SimpleCamelRouteMockTest.logStarted - Started SimpleCamelRouteMockTest in 10.303 seconds (JVM running for 14.312)
+14-08-2019 19:56:57.070 [Test worker] INFO  o.a.c.t.s.CamelAnnotationsHandler.execute - Setting shutdown timeout to [10 SECONDS] on CamelContext with name [camelContext].
+14-08-2019 19:56:57.076 [Test worker] INFO  o.a.c.t.s.CamelAnnotationsHandler.execute - Enabling auto mocking of endpoints matching pattern [*] on CamelContext with name [camelContext].
+14-08-2019 19:56:57.227 [Test worker] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.beforeTestMethod - @RunWith(CamelSpringBootRunner.class) before: class com.learncamel.learncamelspringboot.route.SimpleCamelRouteMockTest.moveFile
+14-08-2019 19:56:57.232 [Test worker] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.beforeTestMethod - Initialized CamelSpringBootRunner now ready to start CamelContext
+14-08-2019 19:56:57.236 [Test worker] INFO  o.a.c.t.s.CamelAnnotationsHandler.execute - Starting CamelContext with name [camelContext].
+14-08-2019 19:56:57.237 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.24.0 (CamelContext: camel-1) is starting
+14-08-2019 19:56:57.240 [Test worker] INFO  o.a.c.m.ManagedManagementStrategy.doStart - JMX is enabled
+14-08-2019 19:56:57.687 [Test worker] INFO  o.a.c.i.InterceptSendToMockEndpointStrategy.registerEndpoint - Adviced endpoint [direct://input] with mock endpoint [mock:direct:input]
+14-08-2019 19:56:57.955 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.doStartCamel - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+14-08-2019 19:56:58.179 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route1 started and consuming from: direct://input
+14-08-2019 19:56:58.183 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.start - Total 1 routes, of which 1 are started
+14-08-2019 19:56:58.185 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.24.0 (CamelContext: camel-1) started in 0.948 seconds
+14-08-2019 19:56:58.890 [Test worker] INFO  route1.log - Timer Invoked and the body is type,sku#,itemdescription,price
+ADD,100,Samsung TV,500
+ADD,101,LG TV,500 MOCK_TEST Environment
+14-08-2019 19:56:58.908 [Test worker] INFO  route1.log - mock env flow and the body is type,sku#,itemdescription,price
+ADD,100,Samsung TV,500
+ADD,101,LG TV,500
+14-08-2019 19:56:58.915 [Test worker] INFO  route1.log - unmarshalling and the body is type,sku#,itemdescription,price
+ADD,100,Samsung TV,500
+ADD,101,LG TV,500
+14-08-2019 19:56:59.006 [Test worker] INFO  route1.log - The unmarshalled object is [Item(transactionType=ADD, sku=100, itemDescription=Samsung TV, price=500.00), Item(transactionType=ADD, sku=101, itemDescription=LG TV, price=500.00)]
+14-08-2019 19:56:59.018 [Test worker] INFO  route1.log - Record is Item(transactionType=ADD, sku=100, itemDescription=Samsung TV, price=500.00)
+14-08-2019 19:56:59.026 [Test worker] INFO  c.l.l.process.BuildSqlProcessor.process - Item in Processor is: Item(transactionType=ADD, sku=100, itemDescription=Samsung TV, price=500.00)
+14-08-2019 19:56:59.034 [Test worker] INFO  c.l.l.process.BuildSqlProcessor.process - Query is insert into items (sku, item_description, price) values ('100', 'Samsung TV', 500.00)
+14-08-2019 19:56:59.039 [Test worker] INFO  route1.log - Record is Item(transactionType=ADD, sku=101, itemDescription=LG TV, price=500.00)
+14-08-2019 19:56:59.042 [Test worker] INFO  c.l.l.process.BuildSqlProcessor.process - Item in Processor is: Item(transactionType=ADD, sku=101, itemDescription=LG TV, price=500.00)
+14-08-2019 19:56:59.044 [Test worker] INFO  c.l.l.process.BuildSqlProcessor.process - Query is insert into items (sku, item_description, price) values ('101', 'LG TV', 500.00)
+14-08-2019 19:56:59.051 [Test worker] INFO  o.a.c.component.mock.MockEndpoint.assertIsSatisfied - Asserting: mock://output1 is satisfied
+14-08-2019 19:56:59.052 [Test worker] INFO  o.a.c.component.mock.MockEndpoint.assertIsSatisfied - Asserting: mock://output2 is satisfied
+14-08-2019 19:56:59.055 [Test worker] INFO  o.a.c.component.mock.MockEndpoint.assertIsSatisfied - Asserting: mock://output3 is satisfied
+14-08-2019 19:56:59.072 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-1) is shutting down
+14-08-2019 19:56:59.082 [Test worker] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Starting to graceful shutdown 1 routes (timeout 10 seconds)
+14-08-2019 19:56:59.098 [Camel (camel-1) thread #1 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: route1 shutdown complete, was consuming from: direct://input
+14-08-2019 19:56:59.099 [Test worker] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Graceful shutdown of 1 routes completed in 0 seconds
+14-08-2019 19:56:59.135 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-1) uptime 1.898 seconds
+14-08-2019 19:56:59.144 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-1) is shutdown in 0.071 seconds
+14-08-2019 19:56:59.179 [Test worker] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+14-08-2019 19:56:59.185 [Test worker] INFO  c.l.l.route.SimpleCamelRouteMockTest.afterTestMethod - ********************************************************************************
+14-08-2019 19:56:59.186 [Test worker] INFO  c.l.l.route.SimpleCamelRouteMockTest.afterTestMethod - Testing done: moveFile(com.learncamel.learncamelspringboot.route.SimpleCamelRouteMockTest)
+14-08-2019 19:56:59.188 [Test worker] INFO  c.l.l.route.SimpleCamelRouteMockTest.afterTestMethod - Took: 0.997 seconds (997 millis)
+14-08-2019 19:56:59.189 [Test worker] INFO  c.l.l.route.SimpleCamelRouteMockTest.afterTestMethod - ********************************************************************************
+14-08-2019 19:56:59.191 [Test worker] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.afterTestMethod - @RunWith(CamelSpringBootRunner.class) after: class com.learncamel.learncamelspringboot.route.SimpleCamelRouteMockTest.moveFile
+14-08-2019 19:56:59.220 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.buildDefaultMergedContextConfiguration - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest], using SpringBootContextLoader
+14-08-2019 19:56:59.233 [Test worker] INFO  o.s.t.c.s.AbstractContextLoader.generateDefaultLocations - Could not detect default resource locations for test class [com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+14-08-2019 19:56:59.236 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils.detectDefaultConfigurationClasses - Could not detect default configuration classes for test class [com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest]: SimpleCamelRouteTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14-08-2019 19:56:59.245 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses - Found @SpringBootConfiguration com.learncamel.learncamelspringboot.LearnCamelSpringBootApplication for test class com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest
+14-08-2019 19:56:59.249 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.getDefaultTestExecutionListenerClassNames - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener]
+14-08-2019 19:56:59.252 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.getTestExecutionListeners - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7e5fd306, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3e796ca0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@47e9babb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@164bacf8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@160c8ad4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6365e8d9, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@69d3aa6c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@22b4e7c2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@501c936a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1cf38a90, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6887c3a8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6d88a38d]
+14-08-2019 19:56:59.269 [Test worker] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.prepareTestInstance - @RunWith(CamelSpringBootRunner.class) preparing: class com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest
+14-08-2019 19:56:59.434 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.logStarting - Starting SimpleCamelRouteTest on amy-VirtualBox with PID 16257 (started by amy in /home/amy/IdeaProjects/learncamel-spring-boot)
+14-08-2019 19:56:59.437 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.logStartupProfileInfo - The following profiles are active: dev
+14-08-2019 19:57:00.263 [Test worker] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$cac865bc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14-08-2019 19:57:00.283 [Test worker] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a89e9f9d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14-08-2019 19:57:01.120 [Test worker] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+14-08-2019 19:57:01.543 [Test worker] INFO  o.a.c.i.c.DefaultTypeConverter.doStart - Type converters loaded (core: 195, classpath: 1)
+14-08-2019 19:57:02.572 [Test worker] INFO  c.l.l.route.SimpleCamelRoute.configure - Starting the Camel Route
+14-08-2019 19:57:02.581 [Test worker] INFO  c.l.l.route.SimpleCamelRoute.configure - Ending the Camel Route
+14-08-2019 19:57:02.584 [Test worker] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRoutes - Loading additional Camel XML routes from: classpath:camel/*.xml
+14-08-2019 19:57:02.585 [Test worker] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRests - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+14-08-2019 19:57:02.599 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.logStarted - Started SimpleCamelRouteTest in 3.327 seconds (JVM running for 19.858)
+14-08-2019 19:57:02.604 [Test worker] INFO  o.a.c.t.s.CamelAnnotationsHandler.execute - Setting shutdown timeout to [10 SECONDS] on CamelContext with name [camelContext].
+14-08-2019 19:57:02.628 [Test worker] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.beforeTestMethod - @RunWith(CamelSpringBootRunner.class) before: class com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest.moveFile_add
+14-08-2019 19:57:02.629 [Test worker] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.beforeTestMethod - Initialized CamelSpringBootRunner now ready to start CamelContext
+14-08-2019 19:57:02.630 [Test worker] INFO  o.a.c.t.s.CamelAnnotationsHandler.execute - Starting CamelContext with name [camelContext].
+14-08-2019 19:57:02.635 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.24.0 (CamelContext: camel-2) is starting
+14-08-2019 19:57:02.635 [Test worker] INFO  o.a.c.m.ManagedManagementStrategy.doStart - JMX is enabled
+14-08-2019 19:57:02.885 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.doStartCamel - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+14-08-2019 19:57:03.003 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route2 started and consuming from: timer://hello?period=10s
+14-08-2019 19:57:03.010 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.start - Total 1 routes, of which 1 are started
+14-08-2019 19:57:03.011 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.24.0 (CamelContext: camel-2) started in 0.377 seconds
+14-08-2019 19:57:04.011 [Camel (camel-2) thread #2 - timer://hello] INFO  route2.log - Timer Invoked and the body is  DEV Environment
+14-08-2019 19:57:04.101 [Camel (camel-2) thread #2 - timer://hello] INFO  route2.log - unmarshalling and the body is type,sku#,itemdescription,price
+ADD,100,Samsung TV,500
+ADD,101,LG TV,500
+14-08-2019 19:57:04.119 [Camel (camel-2) thread #2 - timer://hello] INFO  route2.log - The unmarshalled object is [Item(transactionType=ADD, sku=100, itemDescription=Samsung TV, price=500.00), Item(transactionType=ADD, sku=101, itemDescription=LG TV, price=500.00)]
+14-08-2019 19:57:04.125 [Camel (camel-2) thread #2 - timer://hello] INFO  route2.log - Record is Item(transactionType=ADD, sku=100, itemDescription=Samsung TV, price=500.00)
+14-08-2019 19:57:04.126 [Camel (camel-2) thread #2 - timer://hello] INFO  c.l.l.process.BuildSqlProcessor.process - Item in Processor is: Item(transactionType=ADD, sku=100, itemDescription=Samsung TV, price=500.00)
+14-08-2019 19:57:04.131 [Camel (camel-2) thread #2 - timer://hello] INFO  c.l.l.process.BuildSqlProcessor.process - Query is insert into items (sku, item_description, price) values ('100', 'Samsung TV', 500.00)
+14-08-2019 19:57:04.134 [Camel (camel-2) thread #2 - timer://hello] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+14-08-2019 19:57:05.017 [Camel (camel-2) thread #2 - timer://hello] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+14-08-2019 19:57:05.086 [Camel (camel-2) thread #2 - timer://hello] INFO  route2.log - Record is Item(transactionType=ADD, sku=101, itemDescription=LG TV, price=500.00)
+14-08-2019 19:57:05.091 [Camel (camel-2) thread #2 - timer://hello] INFO  c.l.l.process.BuildSqlProcessor.process - Item in Processor is: Item(transactionType=ADD, sku=101, itemDescription=LG TV, price=500.00)
+14-08-2019 19:57:05.097 [Camel (camel-2) thread #2 - timer://hello] INFO  c.l.l.process.BuildSqlProcessor.process - Query is insert into items (sku, item_description, price) values ('101', 'LG TV', 500.00)
+14-08-2019 19:57:06.055 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-2) is shutting down
+14-08-2019 19:57:06.065 [Test worker] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Starting to graceful shutdown 1 routes (timeout 10 seconds)
+14-08-2019 19:57:06.070 [Camel (camel-2) thread #3 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: route2 shutdown complete, was consuming from: timer://hello?period=10s
+14-08-2019 19:57:06.074 [Test worker] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Graceful shutdown of 1 routes completed in 0 seconds
+14-08-2019 19:57:06.091 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-2) uptime 3.457 seconds
+14-08-2019 19:57:06.094 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-2) is shutdown in 0.039 seconds
+14-08-2019 19:57:06.098 [Test worker] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+14-08-2019 19:57:06.107 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+14-08-2019 19:57:06.161 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+14-08-2019 19:57:06.162 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - ********************************************************************************
+14-08-2019 19:57:06.163 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - Testing done: moveFile_add(com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest)
+14-08-2019 19:57:06.163 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - Took: 3.149 seconds (3149 millis)
+14-08-2019 19:57:06.163 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - ********************************************************************************
+14-08-2019 19:57:06.164 [Test worker] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.afterTestMethod - @RunWith(CamelSpringBootRunner.class) after: class com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest.moveFile_add
+14-08-2019 19:57:06.167 [Test worker] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.prepareTestInstance - @RunWith(CamelSpringBootRunner.class) preparing: class com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest
+14-08-2019 19:57:06.266 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.logStarting - Starting SimpleCamelRouteTest on amy-VirtualBox with PID 16257 (started by amy in /home/amy/IdeaProjects/learncamel-spring-boot)
+14-08-2019 19:57:06.267 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.logStartupProfileInfo - The following profiles are active: dev
+14-08-2019 19:57:06.991 [Test worker] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$cac865bc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14-08-2019 19:57:07.007 [Test worker] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a89e9f9d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14-08-2019 19:57:07.769 [Test worker] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+14-08-2019 19:57:08.065 [Test worker] INFO  o.a.c.i.c.DefaultTypeConverter.doStart - Type converters loaded (core: 195, classpath: 1)
+14-08-2019 19:57:08.942 [Test worker] INFO  c.l.l.route.SimpleCamelRoute.configure - Starting the Camel Route
+14-08-2019 19:57:08.944 [Test worker] INFO  c.l.l.route.SimpleCamelRoute.configure - Ending the Camel Route
+14-08-2019 19:57:08.945 [Test worker] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRoutes - Loading additional Camel XML routes from: classpath:camel/*.xml
+14-08-2019 19:57:08.946 [Test worker] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRests - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+14-08-2019 19:57:08.954 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.logStarted - Started SimpleCamelRouteTest in 2.778 seconds (JVM running for 26.213)
+14-08-2019 19:57:08.962 [Test worker] INFO  o.a.c.t.s.CamelAnnotationsHandler.execute - Setting shutdown timeout to [10 SECONDS] on CamelContext with name [camelContext].
+14-08-2019 19:57:08.986 [Test worker] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.beforeTestMethod - @RunWith(CamelSpringBootRunner.class) before: class com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest.moveFile_delete
+14-08-2019 19:57:08.988 [Test worker] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.beforeTestMethod - Initialized CamelSpringBootRunner now ready to start CamelContext
+14-08-2019 19:57:08.988 [Test worker] INFO  o.a.c.t.s.CamelAnnotationsHandler.execute - Starting CamelContext with name [camelContext].
+14-08-2019 19:57:08.990 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.24.0 (CamelContext: camel-3) is starting
+14-08-2019 19:57:08.994 [Test worker] INFO  o.a.c.m.ManagedManagementStrategy.doStart - JMX is enabled
+14-08-2019 19:57:09.284 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.doStartCamel - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+14-08-2019 19:57:09.453 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route3 started and consuming from: timer://hello?period=10s
+14-08-2019 19:57:09.463 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.start - Total 1 routes, of which 1 are started
+14-08-2019 19:57:09.464 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.24.0 (CamelContext: camel-3) started in 0.474 seconds
+14-08-2019 19:57:10.464 [Camel (camel-3) thread #4 - timer://hello] INFO  route3.log - Timer Invoked and the body is  DEV Environment
+14-08-2019 19:57:10.477 [Camel (camel-3) thread #4 - timer://hello] INFO  route3.log - unmarshalling and the body is type,sku#,itemdescription,price
+DELETE,100,Samsung TV,600
+14-08-2019 19:57:10.485 [Camel (camel-3) thread #4 - timer://hello] INFO  route3.log - The unmarshalled object is Item(transactionType=DELETE, sku=100, itemDescription=Samsung TV, price=600.00)
+14-08-2019 19:57:10.491 [Camel (camel-3) thread #4 - timer://hello] INFO  route3.log - Record is Item(transactionType=DELETE, sku=100, itemDescription=Samsung TV, price=600.00)
+14-08-2019 19:57:10.492 [Camel (camel-3) thread #4 - timer://hello] INFO  c.l.l.process.BuildSqlProcessor.process - Item in Processor is: Item(transactionType=DELETE, sku=100, itemDescription=Samsung TV, price=600.00)
+14-08-2019 19:57:10.493 [Camel (camel-3) thread #4 - timer://hello] INFO  c.l.l.process.BuildSqlProcessor.process - Query is delete from items where sku = '100'
+14-08-2019 19:57:10.495 [Camel (camel-3) thread #4 - timer://hello] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-2 - Starting...
+14-08-2019 19:57:10.548 [Camel (camel-3) thread #4 - timer://hello] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-2 - Start completed.
+14-08-2019 19:57:12.496 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-3) is shutting down
+14-08-2019 19:57:12.498 [Test worker] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Starting to graceful shutdown 1 routes (timeout 10 seconds)
+14-08-2019 19:57:12.513 [Camel (camel-3) thread #5 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: route3 shutdown complete, was consuming from: timer://hello?period=10s
+14-08-2019 19:57:12.515 [Test worker] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Graceful shutdown of 1 routes completed in 0 seconds
+14-08-2019 19:57:12.520 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-3) uptime 3.530 seconds
+14-08-2019 19:57:12.521 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-3) is shutdown in 0.025 seconds
+14-08-2019 19:57:12.536 [Test worker] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+14-08-2019 19:57:12.548 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-2 - Shutdown initiated...
+14-08-2019 19:57:12.611 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-2 - Shutdown completed.
+14-08-2019 19:57:12.611 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - ********************************************************************************
+14-08-2019 19:57:12.612 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - Testing done: moveFile_delete(com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest)
+14-08-2019 19:57:12.613 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - Took: 3.147 seconds (3147 millis)
+14-08-2019 19:57:12.613 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - ********************************************************************************
+14-08-2019 19:57:12.613 [Test worker] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.afterTestMethod - @RunWith(CamelSpringBootRunner.class) after: class com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest.moveFile_delete
+14-08-2019 19:57:12.615 [Test worker] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.prepareTestInstance - @RunWith(CamelSpringBootRunner.class) preparing: class com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest
+14-08-2019 19:57:12.706 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.logStarting - Starting SimpleCamelRouteTest on amy-VirtualBox with PID 16257 (started by amy in /home/amy/IdeaProjects/learncamel-spring-boot)
+14-08-2019 19:57:12.710 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.logStartupProfileInfo - The following profiles are active: dev
+14-08-2019 19:57:13.368 [Test worker] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$cac865bc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14-08-2019 19:57:13.394 [Test worker] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a89e9f9d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14-08-2019 19:57:13.978 [Test worker] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+14-08-2019 19:57:14.165 [Test worker] INFO  o.a.c.i.c.DefaultTypeConverter.doStart - Type converters loaded (core: 195, classpath: 1)
+14-08-2019 19:57:14.829 [Test worker] INFO  c.l.l.route.SimpleCamelRoute.configure - Starting the Camel Route
+14-08-2019 19:57:14.832 [Test worker] INFO  c.l.l.route.SimpleCamelRoute.configure - Ending the Camel Route
+14-08-2019 19:57:14.834 [Test worker] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRoutes - Loading additional Camel XML routes from: classpath:camel/*.xml
+14-08-2019 19:57:14.835 [Test worker] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRests - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+14-08-2019 19:57:14.843 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.logStarted - Started SimpleCamelRouteTest in 2.223 seconds (JVM running for 32.102)
+14-08-2019 19:57:14.847 [Test worker] INFO  o.a.c.t.s.CamelAnnotationsHandler.execute - Setting shutdown timeout to [10 SECONDS] on CamelContext with name [camelContext].
+14-08-2019 19:57:14.862 [Test worker] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.beforeTestMethod - @RunWith(CamelSpringBootRunner.class) before: class com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest.moveFile_update
+14-08-2019 19:57:14.865 [Test worker] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.beforeTestMethod - Initialized CamelSpringBootRunner now ready to start CamelContext
+14-08-2019 19:57:14.866 [Test worker] INFO  o.a.c.t.s.CamelAnnotationsHandler.execute - Starting CamelContext with name [camelContext].
+14-08-2019 19:57:14.867 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.24.0 (CamelContext: camel-4) is starting
+14-08-2019 19:57:14.868 [Test worker] INFO  o.a.c.m.ManagedManagementStrategy.doStart - JMX is enabled
+14-08-2019 19:57:14.999 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.doStartCamel - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+14-08-2019 19:57:15.066 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route4 started and consuming from: timer://hello?period=10s
+14-08-2019 19:57:15.073 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.start - Total 1 routes, of which 1 are started
+14-08-2019 19:57:15.077 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.24.0 (CamelContext: camel-4) started in 0.208 seconds
+14-08-2019 19:57:16.073 [Camel (camel-4) thread #6 - timer://hello] INFO  route4.log - Timer Invoked and the body is  DEV Environment
+14-08-2019 19:57:16.094 [Camel (camel-4) thread #6 - timer://hello] INFO  route4.log - unmarshalling and the body is type,sku#,itemdescription,price
+UPDATE,100,Samsung TV,600
+14-08-2019 19:57:16.103 [Camel (camel-4) thread #6 - timer://hello] INFO  route4.log - The unmarshalled object is Item(transactionType=UPDATE, sku=100, itemDescription=Samsung TV, price=600.00)
+14-08-2019 19:57:16.111 [Camel (camel-4) thread #6 - timer://hello] INFO  route4.log - Record is Item(transactionType=UPDATE, sku=100, itemDescription=Samsung TV, price=600.00)
+14-08-2019 19:57:16.114 [Camel (camel-4) thread #6 - timer://hello] INFO  c.l.l.process.BuildSqlProcessor.process - Item in Processor is: Item(transactionType=UPDATE, sku=100, itemDescription=Samsung TV, price=600.00)
+14-08-2019 19:57:16.115 [Camel (camel-4) thread #6 - timer://hello] INFO  c.l.l.process.BuildSqlProcessor.process - Query is update items set price = 600.00 where sku = '100'
+14-08-2019 19:57:16.118 [Camel (camel-4) thread #6 - timer://hello] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-3 - Starting...
+14-08-2019 19:57:16.204 [Camel (camel-4) thread #6 - timer://hello] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-3 - Start completed.
+14-08-2019 19:57:18.096 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-4) is shutting down
+14-08-2019 19:57:18.097 [Test worker] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Starting to graceful shutdown 1 routes (timeout 10 seconds)
+14-08-2019 19:57:18.106 [Camel (camel-4) thread #7 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: route4 shutdown complete, was consuming from: timer://hello?period=10s
+14-08-2019 19:57:18.110 [Test worker] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Graceful shutdown of 1 routes completed in 0 seconds
+14-08-2019 19:57:18.133 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-4) uptime 3.262 seconds
+14-08-2019 19:57:18.133 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-4) is shutdown in 0.037 seconds
+14-08-2019 19:57:18.135 [Test worker] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+14-08-2019 19:57:18.135 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-3 - Shutdown initiated...
+14-08-2019 19:57:18.181 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-3 - Shutdown completed.
+14-08-2019 19:57:18.182 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - ********************************************************************************
+14-08-2019 19:57:18.184 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - Testing done: moveFile_update(com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest)
+14-08-2019 19:57:18.185 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - Took: 3.105 seconds (3105 millis)
+14-08-2019 19:57:18.185 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - ********************************************************************************
+14-08-2019 19:57:18.185 [Test worker] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.afterTestMethod - @RunWith(CamelSpringBootRunner.class) after: class com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest.moveFile_update
+14-08-2019 19:57:18.185 [Test worker] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.prepareTestInstance - @RunWith(CamelSpringBootRunner.class) preparing: class com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest
+14-08-2019 19:57:18.263 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.logStarting - Starting SimpleCamelRouteTest on amy-VirtualBox with PID 16257 (started by amy in /home/amy/IdeaProjects/learncamel-spring-boot)
+14-08-2019 19:57:18.264 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.logStartupProfileInfo - The following profiles are active: dev
+14-08-2019 19:57:18.699 [Test worker] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$cac865bc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14-08-2019 19:57:18.714 [Test worker] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a89e9f9d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14-08-2019 19:57:19.180 [Test worker] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+14-08-2019 19:57:19.452 [Test worker] INFO  o.a.c.i.c.DefaultTypeConverter.doStart - Type converters loaded (core: 195, classpath: 1)
+14-08-2019 19:57:20.005 [Test worker] INFO  c.l.l.route.SimpleCamelRoute.configure - Starting the Camel Route
+14-08-2019 19:57:20.010 [Test worker] INFO  c.l.l.route.SimpleCamelRoute.configure - Ending the Camel Route
+14-08-2019 19:57:20.011 [Test worker] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRoutes - Loading additional Camel XML routes from: classpath:camel/*.xml
+14-08-2019 19:57:20.012 [Test worker] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRests - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+14-08-2019 19:57:20.019 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.logStarted - Started SimpleCamelRouteTest in 1.827 seconds (JVM running for 37.278)
+14-08-2019 19:57:20.023 [Test worker] INFO  o.a.c.t.s.CamelAnnotationsHandler.execute - Setting shutdown timeout to [10 SECONDS] on CamelContext with name [camelContext].
+14-08-2019 19:57:20.041 [Test worker] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.beforeTestMethod - @RunWith(CamelSpringBootRunner.class) before: class com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest.moveFile_add_throwsException
+14-08-2019 19:57:20.042 [Test worker] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.beforeTestMethod - Initialized CamelSpringBootRunner now ready to start CamelContext
+14-08-2019 19:57:20.043 [Test worker] INFO  o.a.c.t.s.CamelAnnotationsHandler.execute - Starting CamelContext with name [camelContext].
+14-08-2019 19:57:20.043 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.24.0 (CamelContext: camel-5) is starting
+14-08-2019 19:57:20.044 [Test worker] INFO  o.a.c.m.ManagedManagementStrategy.doStart - JMX is enabled
+14-08-2019 19:57:20.151 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.doStartCamel - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+14-08-2019 19:57:20.205 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route5 started and consuming from: timer://hello?period=10s
+14-08-2019 19:57:20.210 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.start - Total 1 routes, of which 1 are started
+14-08-2019 19:57:20.212 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.24.0 (CamelContext: camel-5) started in 0.169 seconds
+14-08-2019 19:57:21.210 [Camel (camel-5) thread #8 - timer://hello] INFO  route5.log - Timer Invoked and the body is  DEV Environment
+14-08-2019 19:57:21.227 [Camel (camel-5) thread #8 - timer://hello] INFO  route5.log - unmarshalling and the body is type,sku#,itemdescription,price
+ADD,,Samsung TV,500
+14-08-2019 19:57:21.233 [Camel (camel-5) thread #8 - timer://hello] INFO  route5.log - The unmarshalled object is Item(transactionType=ADD, sku=, itemDescription=Samsung TV, price=500.00)
+14-08-2019 19:57:21.236 [Camel (camel-5) thread #8 - timer://hello] INFO  route5.log - Record is Item(transactionType=ADD, sku=, itemDescription=Samsung TV, price=500.00)
+14-08-2019 19:57:21.237 [Camel (camel-5) thread #8 - timer://hello] INFO  c.l.l.process.BuildSqlProcessor.process - Item in Processor is: Item(transactionType=ADD, sku=, itemDescription=Samsung TV, price=500.00)
+14-08-2019 19:57:21.244 [Camel (camel-5) thread #8 - timer://hello] ERROR route5.log - DataException in the route Item(transactionType=ADD, sku=, itemDescription=Samsung TV, price=500.00)
+14-08-2019 19:57:21.251 [Camel (camel-5) thread #8 - timer://hello] ERROR o.a.c.processor.DefaultErrorHandler.log - Failed delivery for (MessageId: ID-amy-VirtualBox-1565769414852-4-6 on ExchangeId: ID-amy-VirtualBox-1565769414852-4-5). Exhausted after delivery attempt: 1 caught: com.learncamel.learncamelspringboot.exception.DataException: Sku is null for Samsung TV. Processed by failure processor: FatalFallbackErrorHandler[Channel[Log(route5)[DataException in the route ${body}]]]
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route5            ] [route5            ] [timer://hello?period=10s                                                      ] [        39]
+[route5            ] [log35             ] [log                                                                           ] [         1]
+[route5            ] [process9          ] [Processor@0x220f3514                                                          ] [         7]
+[route5            ] [log30             ] [log                                                                           ] [         1]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+com.learncamel.learncamelspringboot.exception.DataException: Sku is null for Samsung TV
+	at com.learncamel.learncamelspringboot.process.BuildSqlProcessor.getQuery(BuildSqlProcessor.java:31)
+	at com.learncamel.learncamelspringboot.process.BuildSqlProcessor.process(BuildSqlProcessor.java:20)
+	at org.apache.camel.processor.DelegateSyncProcessor.process(DelegateSyncProcessor.java:63)
+	at org.apache.camel.management.InstrumentationProcessor.process(InstrumentationProcessor.java:76)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:715)
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:638)
+	at org.apache.camel.processor.MulticastProcessor.process(MulticastProcessor.java:248)
+	at org.apache.camel.processor.Splitter.process(Splitter.java:129)
+	at org.apache.camel.management.InstrumentationProcessor.process(InstrumentationProcessor.java:76)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:197)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:79)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+14-08-2019 19:57:21.264 [Camel (camel-5) thread #8 - timer://hello] WARN  o.a.c.c.file.GenericFileOnCompletion.processStrategyRollback - Rollback file strategy: org.apache.camel.component.file.strategy.GenericFileDeleteProcessStrategy@200a839a for file: GenericFile[fileTest.txt]
+14-08-2019 19:57:21.266 [Camel (camel-5) thread #8 - timer://hello] WARN  o.a.c.component.timer.TimerConsumer.log - Error processing exchange. Exchange[ID-amy-VirtualBox-1565769414852-4-2]. Caused by: [com.learncamel.learncamelspringboot.exception.DataException - Sku is null for Samsung TV]
+com.learncamel.learncamelspringboot.exception.DataException: Sku is null for Samsung TV
+	at com.learncamel.learncamelspringboot.process.BuildSqlProcessor.getQuery(BuildSqlProcessor.java:31)
+	at com.learncamel.learncamelspringboot.process.BuildSqlProcessor.process(BuildSqlProcessor.java:20)
+	at org.apache.camel.processor.DelegateSyncProcessor.process(DelegateSyncProcessor.java:63)
+	at org.apache.camel.management.InstrumentationProcessor.process(InstrumentationProcessor.java:76)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:715)
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:638)
+	at org.apache.camel.processor.MulticastProcessor.process(MulticastProcessor.java:248)
+	at org.apache.camel.processor.Splitter.process(Splitter.java:129)
+	at org.apache.camel.management.InstrumentationProcessor.process(InstrumentationProcessor.java:76)
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101)
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:197)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:79)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+14-08-2019 19:57:23.250 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-5) is shutting down
+14-08-2019 19:57:23.252 [Test worker] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Starting to graceful shutdown 1 routes (timeout 10 seconds)
+14-08-2019 19:57:23.263 [Camel (camel-5) thread #9 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: route5 shutdown complete, was consuming from: timer://hello?period=10s
+14-08-2019 19:57:23.263 [Test worker] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Graceful shutdown of 1 routes completed in 0 seconds
+14-08-2019 19:57:23.267 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-5) uptime 3.224 seconds
+14-08-2019 19:57:23.273 [Test worker] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-5) is shutdown in 0.023 seconds
+14-08-2019 19:57:23.276 [Test worker] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+14-08-2019 19:57:23.280 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - ********************************************************************************
+14-08-2019 19:57:23.288 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - Testing done: moveFile_add_throwsException(com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest)
+14-08-2019 19:57:23.288 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - Took: 3.068 seconds (3068 millis)
+14-08-2019 19:57:23.289 [Test worker] INFO  c.l.l.route.SimpleCamelRouteTest.afterTestMethod - ********************************************************************************
+14-08-2019 19:57:23.290 [Test worker] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.afterTestMethod - @RunWith(CamelSpringBootRunner.class) after: class com.learncamel.learncamelspringboot.route.SimpleCamelRouteTest.moveFile_add_throwsException
