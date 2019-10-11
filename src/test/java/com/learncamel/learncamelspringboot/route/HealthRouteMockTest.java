@@ -18,10 +18,7 @@ import org.springframework.test.context.ActiveProfiles;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(CamelSpringBootRunner.class)
-@SpringBootTest(properties={
-        "camel.springboot.xmlRoutes=false",
-        "camel.springboot.javaRoutesExcludePattern=com.learncamel.learncamelspringboot.route.SimpleCamelRoute"
-})
+@SpringBootTest
 @ActiveProfiles("mock")
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
 @MockEndpoints

@@ -20,16 +20,13 @@ public class BuildSqlProcessor implements org.apache.camel.Processor {
         final String query = getQuery(item);
         log.info("Query is " + query);
         exchange.getIn().setBody(query);
+        exchange.getIn().setHeader("skuId", item.getSku());
     }
 
     private static String getQuery(final Item item) {
         final String sku = item.getSku();
         final String itemDescription = item.getItemDescription();
         final BigDecimal price = item.getPrice();
-
-        if (ObjectUtils.isEmpty(item.getSku())) {
-            throw new DataException("Sku is null for " + item.getItemDescription());
-        }
 
         switch (item.getTransactionType()) {
             case "ADD":

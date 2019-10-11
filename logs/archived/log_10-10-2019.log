@@ -1,0 +1,590 @@
+10-10-2019 19:20:14.632 [kafka-coordinator-heartbeat-thread | itemDev] INFO  o.a.k.c.c.i.AbstractCoordinator.markCoordinatorUnknown - [Consumer clientId=consumer-1, groupId=itemDev] Group coordinator localhost:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+10-10-2019 19:20:14.643 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.AbstractCoordinator.onSuccess - [Consumer clientId=consumer-1, groupId=itemDev] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+10-10-2019 19:20:14.651 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.AbstractCoordinator.markCoordinatorUnknown - [Consumer clientId=consumer-1, groupId=itemDev] Group coordinator localhost:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+10-10-2019 19:20:14.753 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.AbstractCoordinator.onSuccess - [Consumer clientId=consumer-1, groupId=itemDev] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+10-10-2019 20:29:52.057 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.buildDefaultMergedContextConfiguration - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.learncamel.learncamelspringboot.route.KafkaRouteTest], using SpringBootContextLoader
+10-10-2019 20:29:52.110 [main] INFO  o.s.t.c.s.AbstractContextLoader.generateDefaultLocations - Could not detect default resource locations for test class [com.learncamel.learncamelspringboot.route.KafkaRouteTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+10-10-2019 20:29:52.112 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils.detectDefaultConfigurationClasses - Could not detect default configuration classes for test class [com.learncamel.learncamelspringboot.route.KafkaRouteTest]: KafkaRouteTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+10-10-2019 20:29:53.106 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses - Found @SpringBootConfiguration com.learncamel.learncamelspringboot.LearnCamelSpringBootApplication for test class com.learncamel.learncamelspringboot.route.KafkaRouteTest
+10-10-2019 20:29:53.582 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.getDefaultTestExecutionListenerClassNames - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener]
+10-10-2019 20:29:53.650 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.getTestExecutionListeners - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6d3c5255, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@b1712f3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6986bbaf, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4879dfad, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4758820d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@74eb909f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@28ec166e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2eee3069, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2da59753, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5629510, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4df5bcb4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@12c7a01b]
+10-10-2019 20:29:53.727 [main] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.prepareTestInstance - @RunWith(CamelSpringBootRunner.class) preparing: class com.learncamel.learncamelspringboot.route.KafkaRouteTest
+10-10-2019 20:29:56.576 [main] INFO  c.l.l.route.KafkaRouteTest.logStarting - Starting KafkaRouteTest on amy-VirtualBox with PID 2157 (started by amy in /home/amy/IdeaProjects/learncamel-spring-boot)
+10-10-2019 20:29:56.581 [main] INFO  c.l.l.route.KafkaRouteTest.logStartupProfileInfo - The following profiles are active: dev
+10-10-2019 20:30:03.361 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor.postProcessBeanFactory - Post-processing PropertySource instances
+10-10-2019 20:30:03.561 [main] INFO  c.u.j.EncryptablePropertySourceConverter.makeEncryptable - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+10-10-2019 20:30:03.575 [main] INFO  c.u.j.EncryptablePropertySourceConverter.makeEncryptable - Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+10-10-2019 20:30:03.579 [main] INFO  c.u.j.EncryptablePropertySourceConverter.makeEncryptable - Converting PropertySource test [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+10-10-2019 20:30:03.589 [main] INFO  c.u.j.EncryptablePropertySourceConverter.makeEncryptable - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+10-10-2019 20:30:03.590 [main] INFO  c.u.j.EncryptablePropertySourceConverter.makeEncryptable - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+10-10-2019 20:30:03.596 [main] INFO  c.u.j.EncryptablePropertySourceConverter.makeEncryptable - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+10-10-2019 20:30:03.600 [main] INFO  c.u.j.EncryptablePropertySourceConverter.makeEncryptable - Converting PropertySource applicationConfig: [classpath:/application.yml] (document #1) [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+10-10-2019 20:30:03.600 [main] INFO  c.u.j.EncryptablePropertySourceConverter.makeEncryptable - Converting PropertySource applicationConfig: [classpath:/application.yml] (document #3) [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+10-10-2019 20:30:03.601 [main] INFO  c.u.j.EncryptablePropertySourceConverter.makeEncryptable - Converting PropertySource applicationConfig: [classpath:/application.yml] (document #0) [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+10-10-2019 20:30:03.891 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter.lambda$null$2 - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+10-10-2019 20:30:06.191 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$c6759654] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10-10-2019 20:30:06.220 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a44bd035] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10-10-2019 20:30:06.566 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver.lambda$null$2 - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+10-10-2019 20:30:06.582 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector.lambda$null$2 - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+10-10-2019 20:30:06.588 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor.lambda$null$2 - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+10-10-2019 20:30:06.622 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor.getProperty - Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWithMD5AndDES
+10-10-2019 20:30:06.623 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor.getProperty - Encryptor config not found for property jasypt.encryptor.keyObtentionIterations, using default value: 1000
+10-10-2019 20:30:06.627 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor.getProperty - Encryptor config not found for property jasypt.encryptor.poolSize, using default value: 1
+10-10-2019 20:30:06.628 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor.getProperty - Encryptor config not found for property jasypt.encryptor.providerName, using default value: null
+10-10-2019 20:30:06.629 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor.getProperty - Encryptor config not found for property jasypt.encryptor.providerClassName, using default value: null
+10-10-2019 20:30:06.629 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor.getProperty - Encryptor config not found for property jasypt.encryptor.saltGeneratorClassname, using default value: org.jasypt.salt.RandomSaltGenerator
+10-10-2019 20:30:06.650 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor.getProperty - Encryptor config not found for property jasypt.encryptor.ivGeneratorClassname, using default value: org.jasypt.salt.NoOpIVGenerator
+10-10-2019 20:30:06.654 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor.getProperty - Encryptor config not found for property jasypt.encryptor.stringOutputType, using default value: base64
+10-10-2019 20:30:10.422 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+10-10-2019 20:30:12.706 [main] INFO  o.a.c.i.c.DefaultTypeConverter.doStart - Type converters loaded (core: 195, classpath: 10)
+10-10-2019 20:30:15.609 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+10-10-2019 20:30:17.294 [main] INFO  c.l.l.route.KafkaRoute.configure - Starting the Camel Route
+10-10-2019 20:30:17.324 [main] INFO  c.l.l.route.KafkaRoute.configure - Ending the Camel Route
+10-10-2019 20:30:17.325 [main] INFO  c.l.l.route.SimpleCamelRoute.configure - Starting the Camel Route
+10-10-2019 20:30:18.038 [main] INFO  c.l.l.route.SimpleCamelRoute.configure - Ending the Camel Route
+10-10-2019 20:30:18.038 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRests - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+10-10-2019 20:30:18.188 [main] INFO  c.l.l.route.KafkaRouteTest.logStarted - Started KafkaRouteTest in 24.005 seconds (JVM running for 31.784)
+10-10-2019 20:30:18.297 [main] INFO  o.a.c.t.s.CamelAnnotationsHandler.execute - Setting shutdown timeout to [10 SECONDS] on CamelContext with name [camelContext].
+10-10-2019 20:30:18.530 [main] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.beforeTestMethod - @RunWith(CamelSpringBootRunner.class) before: class com.learncamel.learncamelspringboot.route.KafkaRouteTest.kafkaRoute
+10-10-2019 20:30:18.538 [main] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.beforeTestMethod - Initialized CamelSpringBootRunner now ready to start CamelContext
+10-10-2019 20:30:18.540 [main] INFO  o.a.c.t.s.CamelAnnotationsHandler.execute - Starting CamelContext with name [camelContext].
+10-10-2019 20:30:18.571 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.24.0 (CamelContext: camel-1) is starting
+10-10-2019 20:30:18.572 [main] INFO  o.a.c.m.ManagedManagementStrategy.doStart - JMX is enabled
+10-10-2019 20:30:20.870 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartCamel - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+10-10-2019 20:30:21.316 [main] INFO  o.a.k.c.producer.ProducerConfig.logAll - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+10-10-2019 20:30:21.695 [main] INFO  o.a.kafka.common.utils.AppInfoParser.<init> - Kafka version : 2.0.1
+10-10-2019 20:30:21.698 [main] INFO  o.a.kafka.common.utils.AppInfoParser.<init> - Kafka commitId : fa14705e51bd2ce5
+10-10-2019 20:30:21.730 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: healthRoute started and consuming from: timer://healthRoute?period=10s
+10-10-2019 20:30:21.738 [main] INFO  o.a.c.component.kafka.KafkaConsumer.doStart - Starting Kafka consumer on topic: inputItemTopic with breakOnFirstError: false
+10-10-2019 20:30:21.761 [main] INFO  o.a.k.c.consumer.ConsumerConfig.logAll - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = itemDev
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 40000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+10-10-2019 20:30:21.858 [main] INFO  o.a.kafka.common.utils.AppInfoParser.<init> - Kafka version : 2.0.1
+10-10-2019 20:30:21.859 [main] INFO  o.a.kafka.common.utils.AppInfoParser.<init> - Kafka commitId : fa14705e51bd2ce5
+10-10-2019 20:30:21.863 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route1 started and consuming from: kafka://inputItemTopic?autoOffsetReset=earliest&brokers=localhost%3A9092&consumersCount=1&groupId=itemDev
+10-10-2019 20:30:21.868 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.c.component.kafka.KafkaConsumer.doRun - Subscribing inputItemTopic-Thread 0 to topic inputItemTopic
+10-10-2019 20:30:21.870 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: mainRoute started and consuming from: timer://hello?period=10s
+10-10-2019 20:30:21.882 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Total 3 routes, of which 3 are started
+10-10-2019 20:30:21.883 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.24.0 (CamelContext: camel-1) started in 3.343 seconds
+10-10-2019 20:30:22.291 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  org.apache.kafka.clients.Metadata.update - Cluster ID: 0zY7OgIQSKenFMKP6LTd3A
+10-10-2019 20:30:22.299 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.AbstractCoordinator.onSuccess - [Consumer clientId=consumer-1, groupId=itemDev] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+10-10-2019 20:30:22.314 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.ConsumerCoordinator.onJoinPrepare - [Consumer clientId=consumer-1, groupId=itemDev] Revoking previously assigned partitions []
+10-10-2019 20:30:22.314 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.AbstractCoordinator.sendJoinGroupRequest - [Consumer clientId=consumer-1, groupId=itemDev] (Re-)joining group
+10-10-2019 20:30:22.911 [Camel (camel-1) thread #3 - timer://hello] INFO  mainRoute.log - Timer Invoked and the body is  DEV Environment
+10-10-2019 20:30:22.921 [Camel (camel-1) thread #3 - timer://hello] INFO  mainRoute.log - PollEnrich: non-mock env flow and the body is 
+10-10-2019 20:30:23.144 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.AbstractCoordinator.handle - [Consumer clientId=consumer-1, groupId=itemDev] Attempt to heartbeat failed since group is rebalancing
+10-10-2019 20:30:23.146 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.ConsumerCoordinator.onJoinPrepare - [Consumer clientId=consumer-1, groupId=itemDev] Revoking previously assigned partitions [inputItemTopic-0, inputItemTopic-1, inputItemTopic-2]
+10-10-2019 20:30:23.152 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.AbstractCoordinator.sendJoinGroupRequest - [Consumer clientId=consumer-1, groupId=itemDev] (Re-)joining group
+10-10-2019 20:30:23.161 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.AbstractCoordinator.onSuccess - [Consumer clientId=consumer-1, groupId=itemDev] Successfully joined group with generation 20
+10-10-2019 20:30:23.162 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.ConsumerCoordinator.onJoinComplete - [Consumer clientId=consumer-1, groupId=itemDev] Setting newly assigned partitions [inputItemTopic-2]
+10-10-2019 20:30:23.162 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.AbstractCoordinator.onSuccess - [Consumer clientId=consumer-1, groupId=itemDev] Successfully joined group with generation 20
+10-10-2019 20:30:23.205 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.ConsumerCoordinator.onJoinComplete - [Consumer clientId=consumer-1, groupId=itemDev] Setting newly assigned partitions [inputItemTopic-0, inputItemTopic-1]
+10-10-2019 20:30:23.317 [main] INFO  c.l.l.route.KafkaRouteTest.afterTestMethod - ********************************************************************************
+10-10-2019 20:30:23.319 [main] INFO  c.l.l.route.KafkaRouteTest.afterTestMethod - Testing done: kafkaRoute(com.learncamel.learncamelspringboot.route.KafkaRouteTest)
+10-10-2019 20:30:23.319 [main] INFO  c.l.l.route.KafkaRouteTest.afterTestMethod - Took: 1.433 seconds (1433 millis)
+10-10-2019 20:30:23.320 [main] INFO  c.l.l.route.KafkaRouteTest.afterTestMethod - ********************************************************************************
+10-10-2019 20:30:23.320 [main] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.afterTestMethod - @RunWith(CamelSpringBootRunner.class) after: class com.learncamel.learncamelspringboot.route.KafkaRouteTest.kafkaRoute
+10-10-2019 20:30:23.426 [Thread-1] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-1) is shutting down
+10-10-2019 20:30:23.435 [Thread-1] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Starting to graceful shutdown 3 routes (timeout 10 seconds)
+10-10-2019 20:30:23.446 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.component.kafka.KafkaConsumer.doStop - Stopping Kafka consumer on topic: inputItemTopic
+10-10-2019 20:30:25.447 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.i.DefaultExecutorServiceManager.awaitTermination - Waited 2.001 seconds for ExecutorService: org.apache.camel.util.concurrent.RejectableThreadPoolExecutor@6d0a4a22[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0][KafkaConsumer[inputItemTopic]] to terminate...
+10-10-2019 20:30:27.447 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.i.DefaultExecutorServiceManager.awaitTermination - Waited 4.001 seconds for ExecutorService: org.apache.camel.util.concurrent.RejectableThreadPoolExecutor@6d0a4a22[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0][KafkaConsumer[inputItemTopic]] to terminate...
+10-10-2019 20:30:28.203 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.c.component.kafka.KafkaConsumer.doRun - Auto commitSync on stop inputItemTopic-Thread 0 from topic inputItemTopic
+10-10-2019 20:30:28.209 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.c.component.kafka.KafkaConsumer.doRun - Unsubscribing inputItemTopic-Thread 0 from topic inputItemTopic
+10-10-2019 20:30:28.244 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: route1 shutdown complete, was consuming from: kafka://inputItemTopic?autoOffsetReset=earliest&brokers=localhost%3A9092&consumersCount=1&groupId=itemDev
+10-10-2019 20:30:28.245 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 10 seconds. Inflights per route: [mainRoute = 1]
+10-10-2019 20:30:28.248 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.logInflightExchanges - There are 1 inflight exchanges:
+	InflightExchange: [exchangeId=ID-amy-VirtualBox-1570692611025-0-1, fromRouteId=mainRoute, routeId=mainRoute, nodeId=pollEnrich2, elapsed=0, duration=5358]
+10-10-2019 20:30:29.168 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.AbstractCoordinator.handle - [Consumer clientId=consumer-1, groupId=itemDev] Attempt to heartbeat failed since group is rebalancing
+10-10-2019 20:30:29.169 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.ConsumerCoordinator.onJoinPrepare - [Consumer clientId=consumer-1, groupId=itemDev] Revoking previously assigned partitions [inputItemTopic-0, inputItemTopic-1]
+10-10-2019 20:30:29.170 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.AbstractCoordinator.sendJoinGroupRequest - [Consumer clientId=consumer-1, groupId=itemDev] (Re-)joining group
+10-10-2019 20:30:29.172 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.AbstractCoordinator.onSuccess - [Consumer clientId=consumer-1, groupId=itemDev] Successfully joined group with generation 21
+10-10-2019 20:30:29.172 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.ConsumerCoordinator.onJoinComplete - [Consumer clientId=consumer-1, groupId=itemDev] Setting newly assigned partitions [inputItemTopic-0, inputItemTopic-1, inputItemTopic-2]
+10-10-2019 20:30:29.248 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 9 seconds. Inflights per route: [mainRoute = 1]
+10-10-2019 20:30:29.249 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.logInflightExchanges - There are 1 inflight exchanges:
+	InflightExchange: [exchangeId=ID-amy-VirtualBox-1570692611025-0-1, fromRouteId=mainRoute, routeId=mainRoute, nodeId=pollEnrich2, elapsed=0, duration=6360]
+10-10-2019 20:30:30.249 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 8 seconds. Inflights per route: [mainRoute = 1]
+10-10-2019 20:30:30.250 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.logInflightExchanges - There are 1 inflight exchanges:
+	InflightExchange: [exchangeId=ID-amy-VirtualBox-1570692611025-0-1, fromRouteId=mainRoute, routeId=mainRoute, nodeId=pollEnrich2, elapsed=0, duration=7361]
+10-10-2019 20:30:31.251 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 7 seconds. Inflights per route: [mainRoute = 1]
+10-10-2019 20:30:31.251 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.logInflightExchanges - There are 1 inflight exchanges:
+	InflightExchange: [exchangeId=ID-amy-VirtualBox-1570692611025-0-1, fromRouteId=mainRoute, routeId=mainRoute, nodeId=pollEnrich2, elapsed=0, duration=8362]
+10-10-2019 20:30:32.252 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 6 seconds. Inflights per route: [mainRoute = 1]
+10-10-2019 20:30:32.252 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.logInflightExchanges - There are 1 inflight exchanges:
+	InflightExchange: [exchangeId=ID-amy-VirtualBox-1570692611025-0-1, fromRouteId=mainRoute, routeId=mainRoute, nodeId=pollEnrich2, elapsed=0, duration=9363]
+10-10-2019 20:30:33.254 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 5 seconds. Inflights per route: [mainRoute = 1]
+10-10-2019 20:30:33.255 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.logInflightExchanges - There are 1 inflight exchanges:
+	InflightExchange: [exchangeId=ID-amy-VirtualBox-1570692611025-0-1, fromRouteId=mainRoute, routeId=mainRoute, nodeId=pollEnrich2, elapsed=0, duration=10366]
+10-10-2019 20:30:33.446 [Thread-1] WARN  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Timeout occurred during graceful shutdown. Forcing the routes to be shutdown now. Notice: some resources may still be running as graceful shutdown did not complete successfully.
+10-10-2019 20:30:33.446 [Camel (camel-1) thread #4 - ShutdownTask] WARN  o.a.c.impl.DefaultShutdownStrategy.run - Interrupted while waiting during graceful shutdown, will force shutdown now.
+10-10-2019 20:30:33.449 [Thread-1] INFO  o.a.c.impl.DefaultShutdownStrategy.logInflightExchanges - There are 1 inflight exchanges:
+	InflightExchange: [exchangeId=ID-amy-VirtualBox-1570692611025-0-1, fromRouteId=mainRoute, routeId=mainRoute, nodeId=pollEnrich2, elapsed=0, duration=10560]
+10-10-2019 20:30:33.456 [Thread-1] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Graceful shutdown of 3 routes completed in 10 seconds
+10-10-2019 20:30:33.463 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: mainRoute shutdown complete, was consuming from: timer://hello?period=10s
+10-10-2019 20:30:33.463 [Camel (camel-1) thread #4 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: healthRoute shutdown complete, was consuming from: timer://healthRoute?period=10s
+10-10-2019 20:30:33.496 [Thread-1] WARN  o.a.c.impl.DefaultInflightRepository.doStop - Shutting down while there are still 1 inflight exchanges.
+10-10-2019 20:30:33.511 [Thread-1] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-1) uptime 14.970 seconds
+10-10-2019 20:30:33.513 [Thread-1] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-1) is shutdown in 10.087 seconds
+10-10-2019 20:30:33.555 [Thread-1] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+10-10-2019 20:30:46.915 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.buildDefaultMergedContextConfiguration - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.learncamel.learncamelspringboot.route.KafkaRouteTest], using SpringBootContextLoader
+10-10-2019 20:30:46.954 [main] INFO  o.s.t.c.s.AbstractContextLoader.generateDefaultLocations - Could not detect default resource locations for test class [com.learncamel.learncamelspringboot.route.KafkaRouteTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+10-10-2019 20:30:46.961 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils.detectDefaultConfigurationClasses - Could not detect default configuration classes for test class [com.learncamel.learncamelspringboot.route.KafkaRouteTest]: KafkaRouteTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+10-10-2019 20:30:47.481 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses - Found @SpringBootConfiguration com.learncamel.learncamelspringboot.LearnCamelSpringBootApplication for test class com.learncamel.learncamelspringboot.route.KafkaRouteTest
+10-10-2019 20:30:47.842 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.getDefaultTestExecutionListenerClassNames - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener]
+10-10-2019 20:30:47.901 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper.getTestExecutionListeners - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@35229f85, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6d3c5255, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@b1712f3, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6986bbaf, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4879dfad, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4758820d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@74eb909f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@28ec166e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2eee3069, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2da59753, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5629510, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4df5bcb4]
+10-10-2019 20:30:47.976 [main] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.prepareTestInstance - @RunWith(CamelSpringBootRunner.class) preparing: class com.learncamel.learncamelspringboot.route.KafkaRouteTest
+10-10-2019 20:30:50.365 [main] INFO  c.l.l.route.KafkaRouteTest.logStarting - Starting KafkaRouteTest on amy-VirtualBox with PID 2437 (started by amy in /home/amy/IdeaProjects/learncamel-spring-boot)
+10-10-2019 20:30:50.367 [main] INFO  c.l.l.route.KafkaRouteTest.logStartupProfileInfo - The following profiles are active: dev
+10-10-2019 20:30:55.024 [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor.postProcessBeanFactory - Post-processing PropertySource instances
+10-10-2019 20:30:55.221 [main] INFO  c.u.j.EncryptablePropertySourceConverter.makeEncryptable - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+10-10-2019 20:30:55.224 [main] INFO  c.u.j.EncryptablePropertySourceConverter.makeEncryptable - Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+10-10-2019 20:30:55.229 [main] INFO  c.u.j.EncryptablePropertySourceConverter.makeEncryptable - Converting PropertySource test [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+10-10-2019 20:30:55.229 [main] INFO  c.u.j.EncryptablePropertySourceConverter.makeEncryptable - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+10-10-2019 20:30:55.231 [main] INFO  c.u.j.EncryptablePropertySourceConverter.makeEncryptable - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+10-10-2019 20:30:55.243 [main] INFO  c.u.j.EncryptablePropertySourceConverter.makeEncryptable - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+10-10-2019 20:30:55.245 [main] INFO  c.u.j.EncryptablePropertySourceConverter.makeEncryptable - Converting PropertySource applicationConfig: [classpath:/application.yml] (document #1) [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+10-10-2019 20:30:55.246 [main] INFO  c.u.j.EncryptablePropertySourceConverter.makeEncryptable - Converting PropertySource applicationConfig: [classpath:/application.yml] (document #3) [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+10-10-2019 20:30:55.252 [main] INFO  c.u.j.EncryptablePropertySourceConverter.makeEncryptable - Converting PropertySource applicationConfig: [classpath:/application.yml] (document #0) [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+10-10-2019 20:30:55.378 [main] INFO  c.u.j.f.DefaultLazyPropertyFilter.lambda$null$2 - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+10-10-2019 20:30:55.585 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$9e1ac2ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10-10-2019 20:30:55.619 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7bf0fcaf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10-10-2019 20:30:55.861 [main] INFO  c.u.j.r.DefaultLazyPropertyResolver.lambda$null$2 - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+10-10-2019 20:30:55.876 [main] INFO  c.u.j.d.DefaultLazyPropertyDetector.lambda$null$2 - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+10-10-2019 20:30:55.886 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor.lambda$null$2 - String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+10-10-2019 20:30:55.905 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor.getProperty - Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWithMD5AndDES
+10-10-2019 20:30:55.906 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor.getProperty - Encryptor config not found for property jasypt.encryptor.keyObtentionIterations, using default value: 1000
+10-10-2019 20:30:55.909 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor.getProperty - Encryptor config not found for property jasypt.encryptor.poolSize, using default value: 1
+10-10-2019 20:30:55.910 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor.getProperty - Encryptor config not found for property jasypt.encryptor.providerName, using default value: null
+10-10-2019 20:30:55.910 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor.getProperty - Encryptor config not found for property jasypt.encryptor.providerClassName, using default value: null
+10-10-2019 20:30:55.912 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor.getProperty - Encryptor config not found for property jasypt.encryptor.saltGeneratorClassname, using default value: org.jasypt.salt.RandomSaltGenerator
+10-10-2019 20:30:55.927 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor.getProperty - Encryptor config not found for property jasypt.encryptor.ivGeneratorClassname, using default value: org.jasypt.salt.NoOpIVGenerator
+10-10-2019 20:30:55.932 [main] INFO  c.u.j.encryptor.DefaultLazyEncryptor.getProperty - Encryptor config not found for property jasypt.encryptor.stringOutputType, using default value: base64
+10-10-2019 20:30:58.105 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+10-10-2019 20:30:58.945 [main] INFO  o.a.c.i.c.DefaultTypeConverter.doStart - Type converters loaded (core: 195, classpath: 10)
+10-10-2019 20:31:01.923 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+10-10-2019 20:31:02.260 [main] INFO  c.l.l.route.KafkaRoute.configure - Starting the Camel Route
+10-10-2019 20:31:02.283 [main] INFO  c.l.l.route.KafkaRoute.configure - Ending the Camel Route
+10-10-2019 20:31:02.283 [main] INFO  c.l.l.route.SimpleCamelRoute.configure - Starting the Camel Route
+10-10-2019 20:31:02.318 [main] INFO  c.l.l.route.SimpleCamelRoute.configure - Ending the Camel Route
+10-10-2019 20:31:02.319 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRests - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+10-10-2019 20:31:02.393 [main] INFO  c.l.l.route.KafkaRouteTest.logStarted - Started KafkaRouteTest in 14.15 seconds (JVM running for 19.29)
+10-10-2019 20:31:02.410 [main] INFO  o.a.c.t.s.CamelAnnotationsHandler.execute - Setting shutdown timeout to [10 SECONDS] on CamelContext with name [camelContext].
+10-10-2019 20:31:02.487 [main] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.beforeTestMethod - @RunWith(CamelSpringBootRunner.class) before: class com.learncamel.learncamelspringboot.route.KafkaRouteTest.kafkaRoute
+10-10-2019 20:31:02.488 [main] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.beforeTestMethod - Initialized CamelSpringBootRunner now ready to start CamelContext
+10-10-2019 20:31:02.488 [main] INFO  o.a.c.t.s.CamelAnnotationsHandler.execute - Starting CamelContext with name [camelContext].
+10-10-2019 20:31:02.489 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.24.0 (CamelContext: camel-1) is starting
+10-10-2019 20:31:02.503 [main] INFO  o.a.c.m.ManagedManagementStrategy.doStart - JMX is enabled
+10-10-2019 20:31:03.453 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartCamel - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+10-10-2019 20:31:03.769 [main] INFO  o.a.k.c.producer.ProducerConfig.logAll - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+10-10-2019 20:31:04.055 [main] INFO  o.a.kafka.common.utils.AppInfoParser.<init> - Kafka version : 2.0.1
+10-10-2019 20:31:04.061 [main] INFO  o.a.kafka.common.utils.AppInfoParser.<init> - Kafka commitId : fa14705e51bd2ce5
+10-10-2019 20:31:04.103 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: healthRoute started and consuming from: timer://healthRoute?period=10s
+10-10-2019 20:31:04.105 [main] INFO  o.a.c.component.kafka.KafkaConsumer.doStart - Starting Kafka consumer on topic: inputItemTopic with breakOnFirstError: false
+10-10-2019 20:31:04.145 [main] INFO  o.a.k.c.consumer.ConsumerConfig.logAll - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = itemDev
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 40000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+10-10-2019 20:31:04.247 [main] INFO  o.a.kafka.common.utils.AppInfoParser.<init> - Kafka version : 2.0.1
+10-10-2019 20:31:04.254 [main] INFO  o.a.kafka.common.utils.AppInfoParser.<init> - Kafka commitId : fa14705e51bd2ce5
+10-10-2019 20:31:04.261 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route1 started and consuming from: kafka://inputItemTopic?autoOffsetReset=earliest&brokers=localhost%3A9092&consumersCount=1&groupId=itemDev
+10-10-2019 20:31:04.265 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: mainRoute started and consuming from: timer://hello?period=10s
+10-10-2019 20:31:04.268 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.c.component.kafka.KafkaConsumer.doRun - Subscribing inputItemTopic-Thread 0 to topic inputItemTopic
+10-10-2019 20:31:04.283 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Total 3 routes, of which 3 are started
+10-10-2019 20:31:04.285 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.24.0 (CamelContext: camel-1) started in 1.794 seconds
+10-10-2019 20:31:04.719 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  org.apache.kafka.clients.Metadata.update - Cluster ID: 0zY7OgIQSKenFMKP6LTd3A
+10-10-2019 20:31:04.724 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.AbstractCoordinator.onSuccess - [Consumer clientId=consumer-1, groupId=itemDev] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+10-10-2019 20:31:04.736 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.ConsumerCoordinator.onJoinPrepare - [Consumer clientId=consumer-1, groupId=itemDev] Revoking previously assigned partitions []
+10-10-2019 20:31:04.736 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.AbstractCoordinator.sendJoinGroupRequest - [Consumer clientId=consumer-1, groupId=itemDev] (Re-)joining group
+10-10-2019 20:31:05.186 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.AbstractCoordinator.handle - [Consumer clientId=consumer-1, groupId=itemDev] Attempt to heartbeat failed since group is rebalancing
+10-10-2019 20:31:05.187 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.ConsumerCoordinator.onJoinPrepare - [Consumer clientId=consumer-1, groupId=itemDev] Revoking previously assigned partitions [inputItemTopic-0, inputItemTopic-1, inputItemTopic-2]
+10-10-2019 20:31:05.187 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.AbstractCoordinator.sendJoinGroupRequest - [Consumer clientId=consumer-1, groupId=itemDev] (Re-)joining group
+10-10-2019 20:31:05.190 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.AbstractCoordinator.onSuccess - [Consumer clientId=consumer-1, groupId=itemDev] Successfully joined group with generation 22
+10-10-2019 20:31:05.207 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.ConsumerCoordinator.onJoinComplete - [Consumer clientId=consumer-1, groupId=itemDev] Setting newly assigned partitions [inputItemTopic-0, inputItemTopic-1]
+10-10-2019 20:31:05.213 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.AbstractCoordinator.onSuccess - [Consumer clientId=consumer-1, groupId=itemDev] Successfully joined group with generation 22
+10-10-2019 20:31:05.215 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.ConsumerCoordinator.onJoinComplete - [Consumer clientId=consumer-1, groupId=itemDev] Setting newly assigned partitions [inputItemTopic-2]
+10-10-2019 20:31:05.286 [Camel (camel-1) thread #3 - timer://hello] INFO  mainRoute.log - Timer Invoked and the body is  DEV Environment
+10-10-2019 20:31:05.313 [Camel (camel-1) thread #3 - timer://hello] INFO  mainRoute.log - PollEnrich: non-mock env flow and the body is 
+10-10-2019 20:31:05.481 [main] INFO  o.a.k.c.producer.ProducerConfig.logAll - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+10-10-2019 20:31:05.521 [main] INFO  o.a.kafka.common.utils.AppInfoParser.<init> - Kafka version : 2.0.1
+10-10-2019 20:31:05.522 [main] INFO  o.a.kafka.common.utils.AppInfoParser.<init> - Kafka commitId : fa14705e51bd2ce5
+10-10-2019 20:31:05.552 [kafka-producer-network-thread | producer-2] INFO  org.apache.kafka.clients.Metadata.update - Cluster ID: 0zY7OgIQSKenFMKP6LTd3A
+10-10-2019 20:31:05.898 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  route1.log - Read message from Kafka: {"transactionType":"ADD", "sku":"100", "itemDescription":"SamsungTV", "price":"500.00"}
+10-10-2019 20:31:05.905 [main] INFO  c.l.l.route.KafkaRouteTest.afterTestMethod - ********************************************************************************
+10-10-2019 20:31:05.907 [main] INFO  c.l.l.route.KafkaRouteTest.afterTestMethod - Testing done: kafkaRoute(com.learncamel.learncamelspringboot.route.KafkaRouteTest)
+10-10-2019 20:31:05.907 [main] INFO  c.l.l.route.KafkaRouteTest.afterTestMethod - Took: 1.619 seconds (1619 millis)
+10-10-2019 20:31:05.908 [main] INFO  c.l.l.route.KafkaRouteTest.afterTestMethod - ********************************************************************************
+10-10-2019 20:31:05.912 [main] INFO  o.a.c.t.s.CamelSpringBootExecutionListener.afterTestMethod - @RunWith(CamelSpringBootRunner.class) after: class com.learncamel.learncamelspringboot.route.KafkaRouteTest.kafkaRoute
+10-10-2019 20:31:05.951 [Thread-1] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-1) is shutting down
+10-10-2019 20:31:05.951 [Thread-1] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Starting to graceful shutdown 3 routes (timeout 10 seconds)
+10-10-2019 20:31:05.982 [Camel (camel-1) thread #5 - ShutdownTask] INFO  o.a.c.component.kafka.KafkaConsumer.doStop - Stopping Kafka consumer on topic: inputItemTopic
+10-10-2019 20:31:06.415 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  route1.log - Unmarshalled message is Item(transactionType=ADD, sku=100, itemDescription=SamsungTV, price=500.00)
+10-10-2019 20:31:06.417 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  c.l.l.process.ValidateDataProcessor.process - Item in ValidateDataProcessor: Item(transactionType=ADD, sku=100, itemDescription=SamsungTV, price=500.00)
+10-10-2019 20:31:06.418 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  c.l.l.process.BuildSqlProcessor.process - Item in Processor is: Item(transactionType=ADD, sku=100, itemDescription=SamsungTV, price=500.00)
+10-10-2019 20:31:06.418 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  c.l.l.process.BuildSqlProcessor.process - Query is insert into items (sku, item_description, price) values ('100', 'SamsungTV', 500.00)
+10-10-2019 20:31:06.419 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+10-10-2019 20:31:07.404 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+10-10-2019 20:31:07.578 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  route1.log - Read item from DB is [{item_i=70, sku=100, item_description=SamsungTV, price=500.00, create_ts=2019-10-06 15:16:35.196333}, {item_i=71, sku=100, item_description=SamsungTV, price=500.00, create_ts=2019-10-10 20:31:07.418502}]
+10-10-2019 20:31:07.589 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.c.component.kafka.KafkaConsumer.doRun - Auto commitSync on stop inputItemTopic-Thread 0 from topic inputItemTopic
+10-10-2019 20:31:07.596 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.c.component.kafka.KafkaConsumer.doRun - Unsubscribing inputItemTopic-Thread 0 from topic inputItemTopic
+10-10-2019 20:31:07.647 [Camel (camel-1) thread #5 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: route1 shutdown complete, was consuming from: kafka://inputItemTopic?autoOffsetReset=earliest&brokers=localhost%3A9092&consumersCount=1&groupId=itemDev
+10-10-2019 20:31:07.648 [Camel (camel-1) thread #5 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Waiting as there are still 2 inflight and pending exchanges to complete, timeout in 10 seconds. Inflights per route: [mainRoute = 1, healthRoute = 1]
+10-10-2019 20:31:07.649 [Camel (camel-1) thread #5 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.logInflightExchanges - There are 2 inflight exchanges:
+	InflightExchange: [exchangeId=ID-amy-VirtualBox-1570692658708-0-1, fromRouteId=healthRoute, routeId=healthRoute, nodeId=pollEnrich1, elapsed=0, duration=2367]
+	InflightExchange: [exchangeId=ID-amy-VirtualBox-1570692658708-0-2, fromRouteId=mainRoute, routeId=mainRoute, nodeId=pollEnrich2, elapsed=0, duration=2366]
+10-10-2019 20:31:08.192 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.AbstractCoordinator.handle - [Consumer clientId=consumer-1, groupId=itemDev] Attempt to heartbeat failed since group is rebalancing
+10-10-2019 20:31:08.193 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.ConsumerCoordinator.onJoinPrepare - [Consumer clientId=consumer-1, groupId=itemDev] Revoking previously assigned partitions [inputItemTopic-0, inputItemTopic-1]
+10-10-2019 20:31:08.193 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.AbstractCoordinator.sendJoinGroupRequest - [Consumer clientId=consumer-1, groupId=itemDev] (Re-)joining group
+10-10-2019 20:31:08.196 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.AbstractCoordinator.onSuccess - [Consumer clientId=consumer-1, groupId=itemDev] Successfully joined group with generation 23
+10-10-2019 20:31:08.197 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.ConsumerCoordinator.onJoinComplete - [Consumer clientId=consumer-1, groupId=itemDev] Setting newly assigned partitions [inputItemTopic-0, inputItemTopic-1, inputItemTopic-2]
+10-10-2019 20:31:08.650 [Camel (camel-1) thread #5 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 9 seconds. Inflights per route: [mainRoute = 1]
+10-10-2019 20:31:08.651 [Camel (camel-1) thread #5 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.logInflightExchanges - There are 1 inflight exchanges:
+	InflightExchange: [exchangeId=ID-amy-VirtualBox-1570692658708-0-2, fromRouteId=mainRoute, routeId=mainRoute, nodeId=pollEnrich2, elapsed=0, duration=3368]
+10-10-2019 20:31:09.651 [Camel (camel-1) thread #5 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 8 seconds. Inflights per route: [mainRoute = 1]
+10-10-2019 20:31:09.652 [Camel (camel-1) thread #5 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.logInflightExchanges - There are 1 inflight exchanges:
+	InflightExchange: [exchangeId=ID-amy-VirtualBox-1570692658708-0-2, fromRouteId=mainRoute, routeId=mainRoute, nodeId=pollEnrich2, elapsed=0, duration=4369]
+10-10-2019 20:31:10.652 [Camel (camel-1) thread #5 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 7 seconds. Inflights per route: [mainRoute = 1]
+10-10-2019 20:31:10.653 [Camel (camel-1) thread #5 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.logInflightExchanges - There are 1 inflight exchanges:
+	InflightExchange: [exchangeId=ID-amy-VirtualBox-1570692658708-0-2, fromRouteId=mainRoute, routeId=mainRoute, nodeId=pollEnrich2, elapsed=0, duration=5370]
+10-10-2019 20:31:11.653 [Camel (camel-1) thread #5 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 6 seconds. Inflights per route: [mainRoute = 1]
+10-10-2019 20:31:11.654 [Camel (camel-1) thread #5 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.logInflightExchanges - There are 1 inflight exchanges:
+	InflightExchange: [exchangeId=ID-amy-VirtualBox-1570692658708-0-2, fromRouteId=mainRoute, routeId=mainRoute, nodeId=pollEnrich2, elapsed=0, duration=6371]
+10-10-2019 20:31:12.655 [Camel (camel-1) thread #5 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 5 seconds. Inflights per route: [mainRoute = 1]
+10-10-2019 20:31:12.655 [Camel (camel-1) thread #5 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.logInflightExchanges - There are 1 inflight exchanges:
+	InflightExchange: [exchangeId=ID-amy-VirtualBox-1570692658708-0-2, fromRouteId=mainRoute, routeId=mainRoute, nodeId=pollEnrich2, elapsed=0, duration=7372]
+10-10-2019 20:31:13.656 [Camel (camel-1) thread #5 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 4 seconds. Inflights per route: [mainRoute = 1]
+10-10-2019 20:31:13.656 [Camel (camel-1) thread #5 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.logInflightExchanges - There are 1 inflight exchanges:
+	InflightExchange: [exchangeId=ID-amy-VirtualBox-1570692658708-0-2, fromRouteId=mainRoute, routeId=mainRoute, nodeId=pollEnrich2, elapsed=0, duration=8373]
+10-10-2019 20:31:14.656 [Camel (camel-1) thread #5 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 3 seconds. Inflights per route: [mainRoute = 1]
+10-10-2019 20:31:14.657 [Camel (camel-1) thread #5 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.logInflightExchanges - There are 1 inflight exchanges:
+	InflightExchange: [exchangeId=ID-amy-VirtualBox-1570692658708-0-2, fromRouteId=mainRoute, routeId=mainRoute, nodeId=pollEnrich2, elapsed=0, duration=9374]
+10-10-2019 20:31:15.658 [Camel (camel-1) thread #5 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 2 seconds. Inflights per route: [mainRoute = 1]
+10-10-2019 20:31:15.658 [Camel (camel-1) thread #5 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.logInflightExchanges - There are 1 inflight exchanges:
+	InflightExchange: [exchangeId=ID-amy-VirtualBox-1570692658708-0-2, fromRouteId=mainRoute, routeId=mainRoute, nodeId=pollEnrich2, elapsed=0, duration=10375]
+10-10-2019 20:31:15.983 [Camel (camel-1) thread #5 - ShutdownTask] WARN  o.a.c.impl.DefaultShutdownStrategy.run - Interrupted while waiting during graceful shutdown, will force shutdown now.
+10-10-2019 20:31:15.982 [Thread-1] WARN  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Timeout occurred during graceful shutdown. Forcing the routes to be shutdown now. Notice: some resources may still be running as graceful shutdown did not complete successfully.
+10-10-2019 20:31:15.988 [Thread-1] INFO  o.a.c.impl.DefaultShutdownStrategy.logInflightExchanges - There are 1 inflight exchanges:
+	InflightExchange: [exchangeId=ID-amy-VirtualBox-1570692658708-0-2, fromRouteId=mainRoute, routeId=mainRoute, nodeId=pollEnrich2, elapsed=0, duration=10705]
+10-10-2019 20:31:15.992 [Thread-1] INFO  o.a.c.impl.DefaultShutdownStrategy.doShutdown - Graceful shutdown of 3 routes completed in 10 seconds
+10-10-2019 20:31:15.994 [Camel (camel-1) thread #5 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: mainRoute shutdown complete, was consuming from: timer://hello?period=10s
+10-10-2019 20:31:15.995 [Camel (camel-1) thread #5 - ShutdownTask] INFO  o.a.c.impl.DefaultShutdownStrategy.run - Route: healthRoute shutdown complete, was consuming from: timer://healthRoute?period=10s
+10-10-2019 20:31:16.010 [Thread-1] WARN  o.a.c.impl.DefaultInflightRepository.doStop - Shutting down while there are still 1 inflight exchanges.
+10-10-2019 20:31:16.010 [Thread-1] INFO  o.a.k.clients.producer.KafkaProducer.close - [Producer clientId=producer-2] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+10-10-2019 20:31:16.021 [Thread-1] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-1) uptime 13.532 seconds
+10-10-2019 20:31:16.024 [Thread-1] INFO  o.a.camel.spring.SpringCamelContext.doStop - Apache Camel 2.24.0 (CamelContext: camel-1) is shutdown in 10.072 seconds
+10-10-2019 20:31:16.048 [Thread-1] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+10-10-2019 20:31:16.053 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+10-10-2019 20:31:16.096 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+10-10-2019 23:42:42.212 [kafka-coordinator-heartbeat-thread | itemDev] INFO  o.a.k.c.c.i.AbstractCoordinator.markCoordinatorUnknown - [Consumer clientId=consumer-1, groupId=itemDev] Group coordinator localhost:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+10-10-2019 23:42:42.215 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.AbstractCoordinator.onSuccess - [Consumer clientId=consumer-1, groupId=itemDev] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+10-10-2019 23:42:42.216 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.AbstractCoordinator.markCoordinatorUnknown - [Consumer clientId=consumer-1, groupId=itemDev] Group coordinator localhost:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+10-10-2019 23:42:42.318 [Camel (camel-1) thread #1 - KafkaConsumer[inputItemTopic]] INFO  o.a.k.c.c.i.AbstractCoordinator.onSuccess - [Consumer clientId=consumer-1, groupId=itemDev] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)

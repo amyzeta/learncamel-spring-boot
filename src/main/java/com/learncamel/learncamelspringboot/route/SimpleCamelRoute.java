@@ -5,6 +5,7 @@ import com.learncamel.learncamelspringboot.domain.Item;
 import com.learncamel.learncamelspringboot.exception.DataException;
 import com.learncamel.learncamelspringboot.process.BuildSqlProcessor;
 import com.learncamel.learncamelspringboot.process.SuccessProcessor;
+import com.learncamel.learncamelspringboot.process.ValidateDataProcessor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.camel.LoggingLevel;
 import org.apache.camel.builder.RouteBuilder;
@@ -12,7 +13,6 @@ import org.apache.camel.dataformat.bindy.csv.BindyCsvDataFormat;
 import org.apache.camel.spi.DataFormat;
 import org.postgresql.util.PSQLException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
@@ -37,6 +37,9 @@ public class SimpleCamelRoute extends RouteBuilder {
 
     @Autowired
     MailProcessor mailProcessor;
+
+    @Autowired
+    ValidateDataProcessor validateDataProcessor;
 
     @Override
     public void configure() {
@@ -75,6 +78,7 @@ public class SimpleCamelRoute extends RouteBuilder {
                 .log("The unmarshalled object is ${body}")
                 .split(body())
                     .log("Record is ${body}")
+                    .process(validateDataProcessor)
                     .process(buildSqlProcessor)
                     .to("{{toRoute2}}")
                 .end()

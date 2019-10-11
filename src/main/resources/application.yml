@@ -33,27 +33,33 @@ toRoute1: file:data/output
 toRoute2: jdbc:datasource
 toRoute3: file:data/output?fileName=success.txt
 healthRoute: timer:healthRoute?period=10s
+
 ---
 spring:
   profiles: dev
 
 message: DEV Environment
----
-spring:
-  profiles: prod
 
-message: PROD Environment
+kafkaFromRoute: kafka:inputItemTopic?brokers=localhost:9092&groupId=itemDev&autoOffsetReset=earliest&consumersCount=1
+kafkaErrorRoute: kafka:errorTopic?brokers=localhost:9092
+kafkaToRoute: jdbc:dataSource
+kafkaSelectNode: sql:select * from ITEMS where sku = :#skuId?dataSource=#dataSource
 
 ---
 spring:
   profiles: mock
 
-startRoute: direct:input
+startRoute: direct:kafka
 fromRoute: file:data/input?delete=true&readLock=none #not used but still needs to be defined
 toRoute1: mock:output1
 toRoute2: mock:output2
 toRoute3: mock:output3
 healthRoute: direct:health
+
+kafkaFromRoute: direct:input
+kafkaErrorRoute: mock:output4
+kafkaSelectNode: mock:output5
+kafkaToRoute: log:?level=INFO&showBody=true
 
 message: MOCK_TEST Environment
 ---

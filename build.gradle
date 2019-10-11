@@ -28,6 +28,10 @@ dependencies {
 	implementation "org.apache.camel:camel-csv:$camelVersion"
 	implementation "org.apache.camel:camel-jdbc:$camelVersion"
 	implementation "org.apache.camel:camel-http:$camelVersion"
+	implementation "org.apache.camel:camel-kafka:$camelVersion"
+	implementation "org.apache.camel:camel-kafka-starter:$camelVersion"
+	implementation "org.apache.camel:camel-gson:$camelVersion"
+	implementation "org.apache.camel:camel-sql:$camelVersion"
 	implementation 'javax.activation:activation:1.1.1'
 	implementation 'javax.xml.bind:jaxb-api:2.3.0'
 	implementation 'com.sun.xml.bind:jaxb-core:2.3.0'

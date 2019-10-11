@@ -17,10 +17,10 @@ public class HealthCheckProcessor implements org.apache.camel.Processor {
     @Override
     public void process(final Exchange exchange) throws Exception {
         final String healthCheckResult = exchange.getIn().getBody(String.class);
-        log.info("Health Check String of the APP is: " + healthCheckResult);
+//        log.info("Health Check String of the APP is: " + healthCheckResult);
 
         Map<String, Object> map = new ObjectMapper().readValue(healthCheckResult, new TypeReference<Map<String, Object>>(){});
-        log.info("map read is: " + map);
+//        log.info("map read is: " + map);
 
         String exceptionMessages = ((Map<String, Object>)map.get("details")).entrySet().stream()
                 .filter(e -> "DOWN".equals(((Map<String, Object>)e.getValue()).get("status")))
