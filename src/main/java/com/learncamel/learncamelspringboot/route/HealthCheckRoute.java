@@ -1,6 +1,6 @@
 package com.learncamel.learncamelspringboot.route;
 
-import com.learncamel.learncamelspringboot.alert.MailProcessor;
+import com.learncamel.learncamelspringboot.process.MailProcessor;
 import com.learncamel.learncamelspringboot.process.HealthCheckProcessor;
 import org.apache.camel.Predicate;
 import org.apache.camel.builder.RouteBuilder;

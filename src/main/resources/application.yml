@@ -14,6 +14,11 @@ spring:
     properties.mail.smtp:
       auth: true
       starttls.enable: true
+  activemq:
+    brokerUrl: tcp://localhost:61616
+    user: admin
+    password: admin
+    packages.trust-all: true
 mailto: sandhicamel@gmail.com
 mailfrom: sandhicamel@gmail.com
 
@@ -32,7 +37,6 @@ fromRoute: file:data/input?delete=true&readLock=none&moveFailed=error
 toRoute1: file:data/output
 toRoute2: jdbc:datasource
 toRoute3: file:data/output?fileName=success.txt
-healthRoute: timer:healthRoute?period=10s
 
 ---
 spring:
@@ -40,10 +44,18 @@ spring:
 
 message: DEV Environment
 
-kafkaFromRoute: kafka:inputItemTopic?brokers=localhost:9092&groupId=itemDev&autoOffsetReset=earliest&consumersCount=1
-kafkaErrorRoute: kafka:errorTopic?brokers=localhost:9092
-kafkaToRoute: jdbc:dataSource
-kafkaSelectNode: sql:select * from ITEMS where sku = :#skuId?dataSource=#dataSource
+kafkaRoute:
+  from: kafka:inputItemTopic?brokers=localhost:9092&groupId=itemDev&autoOffsetReset=earliest&consumersCount=1
+  errorTo: kafka:errorTopic?brokers=localhost:9092
+
+healthRoute: timer:healthRoute?period=10s
+
+activemqRoute:
+  from: activemq:inputItemQueue?disableReplyTo=true
+  errorTo: activemq:errorItemQueue
+
+toRoute: jdbc:dataSource
+selectNode: sql:select * from ITEMS where sku = :#skuId order by create_ts desc limit 1?dataSource=#dataSource
 
 ---
 spring:
@@ -54,12 +66,19 @@ fromRoute: file:data/input?delete=true&readLock=none #not used but still needs t
 toRoute1: mock:output1
 toRoute2: mock:output2
 toRoute3: mock:output3
+
 healthRoute: direct:health
 
-kafkaFromRoute: direct:input
-kafkaErrorRoute: mock:output4
-kafkaSelectNode: mock:output5
-kafkaToRoute: log:?level=INFO&showBody=true
+kafkaRoute:
+  from: direct:kafka2
+  errorTo: mock:output4
+
+activemqRoute:
+  from: direct:activemq
+  errorTo: mock:output6
+
+selectNode: mock:output5
+toRoute: log:?level=INFO&showBody=true
 
 message: MOCK_TEST Environment
 ---

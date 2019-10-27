@@ -31,9 +31,6 @@ public class HealthRouteMockTest {
     @Autowired
     ProducerTemplate producerTemplate;
 
-    @Autowired
-    HealthCheckProcessor healthCheckProcessor;
-
 
     @Test
     public void healthRouteTest() {

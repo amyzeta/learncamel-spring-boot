@@ -1,6 +1,6 @@
 package com.learncamel.learncamelspringboot.route;
 
-import com.learncamel.learncamelspringboot.alert.MailProcessor;
+import com.learncamel.learncamelspringboot.process.MailProcessor;
 import com.learncamel.learncamelspringboot.domain.Item;
 import com.learncamel.learncamelspringboot.exception.DataException;
 import com.learncamel.learncamelspringboot.process.BuildSqlProcessor;

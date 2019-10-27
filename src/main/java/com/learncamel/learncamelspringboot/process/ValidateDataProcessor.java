@@ -12,7 +12,7 @@ import org.springframework.util.ObjectUtils;
 @Slf4j
 public class ValidateDataProcessor implements Processor {
     @Override
-    public void process(final Exchange exchange) throws Exception {
+    public void process(final Exchange exchange) {
         Item item = (Item) exchange.getIn().getBody();
         log.info("Item in ValidateDataProcessor: " + item);
         if (ObjectUtils.isEmpty(item.getSku())) {
